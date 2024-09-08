@@ -9,13 +9,26 @@ export default defineNuxtConfig({
     autoImport: false,
   },
   compatibilityDate: "2024-04-03",
-  modules: ["@pinia/nuxt", "@pinia-plugin-persistedstate/nuxt", "@nuxt/icon"],
+  modules: [
+    "@pinia/nuxt",
+    "@pinia-plugin-persistedstate/nuxt",
+    "@nuxt/icon",
+    "@nuxt/fonts",
+  ],
   icon: {
     provider: "server",
     customCollections: [
       {
         prefix: "icon",
         dir: "./assets/images/icons",
+      },
+    ],
+  },
+  fonts: {
+    families: [
+      {
+        name: "Nunito",
+        provider: "google",
       },
     ],
   },

@@ -1,3 +1,5 @@
 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M21.5627 14.6666L14.4107 7.51461L16.296 5.62927L26.6667 15.9999L16.296 26.3706L14.4107 24.4853L21.5627 17.3333H5.33333V14.6666H21.5627Z" fill="black" style="fill:black;fill-opacity:1;"/>
+  <path
+    d="M21.5627 14.6666L14.4107 7.51461L16.296 5.62927L26.6667 15.9999L16.296 26.3706L14.4107 24.4853L21.5627 17.3333H5.33333V14.6666H21.5627Z"
+    fill="currentColor" style="fill:black;fill-opacity:1;" />
 </svg>

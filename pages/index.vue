@@ -6,6 +6,7 @@ const previewMode = ref<"card" | "row">("card")
 </script>
 
 <template>
+  <Icon name="icon:icon-lock" />
   <div>
     <input type="radio" name="mode" v-model="previewMode" value="card"> Card
     <input type="radio" name="mode" v-model="previewMode" value="row"> Row

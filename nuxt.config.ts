@@ -7,5 +7,6 @@ export default defineNuxtConfig({
     autoImport: false,
   },
   compatibilityDate: "2024-04-03",
+  modules: ["@pinia/nuxt", "@pinia-plugin-persistedstate/nuxt"],
   devtools: { enabled: true },
 });

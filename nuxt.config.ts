@@ -5,6 +5,7 @@ export default defineNuxtConfig({
   devServer: {
     port: 3044,
   },
+  ssr: false,
   imports: {
     autoImport: false,
   },
@@ -27,10 +28,15 @@ export default defineNuxtConfig({
   fonts: {
     families: [
       {
-        name: "Nunito",
+        name: "Inter",
         provider: "google",
       },
     ],
+  },
+  nitro: {
+    experimental: {
+      openAPI: true,
+    },
   },
   devtools: { enabled: true },
 });

@@ -4,15 +4,15 @@ type Note = {
   id: string;
   title: string;
   content: string;
-  createdAt: string;
-  updatedAt: string;
+  createdAt: Date;
+  updatedAt: Date;
 };
 
 type Folder = {
   id: string;
   title: string;
-  createdAt: string;
-  updatedAt: string;
+  createdAt: Date;
+  updatedAt: Date;
 };
 
 export const useNotesStore = defineStore(
@@ -21,11 +21,13 @@ export const useNotesStore = defineStore(
     const notes = ref<Note[]>([]);
     const folders = ref<Folder[]>([]);
 
-    return { notes, folders };
+    const createNote = (note: Note) => {
+      notes.value.push(note);
+    };
+
+    return { notes, folders, createNote };
   },
   {
-    persist: {
-      storage: persistedState.localStorage,
-    },
+    persist: true,
   }
 );

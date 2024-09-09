@@ -16,7 +16,11 @@ export default defineNuxtConfig({
     "@nuxt/icon",
     "@nuxt/fonts",
   ],
+  piniaPersistedstate: {
+    storage: "localStorage",
+  },
   icon: {
+    collections: [],
     provider: "server",
     customCollections: [
       {

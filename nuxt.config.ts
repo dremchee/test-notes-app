@@ -1,46 +1,46 @@
-import { persistedState } from "#imports";
+import { config } from './server/config'
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devServer: {
-    port: 3044,
+    port: config.PORT
   },
   ssr: false,
   imports: {
-    autoImport: false,
+    autoImport: false
   },
-  compatibilityDate: "2024-04-03",
+  compatibilityDate: '2024-04-03',
   modules: [
-    "@pinia/nuxt",
-    "@pinia-plugin-persistedstate/nuxt",
-    "@nuxt/icon",
-    "@nuxt/fonts",
+    '@pinia/nuxt',
+    '@pinia-plugin-persistedstate/nuxt',
+    '@nuxt/icon',
+    '@nuxt/fonts'
   ],
   piniaPersistedstate: {
-    storage: "localStorage",
+    storage: 'localStorage'
   },
   icon: {
     collections: [],
-    provider: "server",
+    provider: 'server',
     customCollections: [
       {
-        prefix: "icon",
-        dir: "./assets/images/icons",
-      },
-    ],
+        prefix: 'icon',
+        dir: './assets/images/icons'
+      }
+    ]
   },
   fonts: {
     families: [
       {
-        name: "Inter",
-        provider: "google",
-      },
-    ],
+        name: 'Inter',
+        provider: 'google'
+      }
+    ]
   },
   nitro: {
     experimental: {
-      openAPI: true,
-    },
+      openAPI: true
+    }
   },
-  devtools: { enabled: true },
-});
+  devtools: { enabled: true }
+})

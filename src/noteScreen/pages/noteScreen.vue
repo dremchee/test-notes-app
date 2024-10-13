@@ -33,4 +33,8 @@ import AddButton from '@/src/elements/AddButton.vue';
  flex-grow: 1;
  overflow-y: auto;
 }
+
+.footer {
+ height: 20%;
+}
 </style>

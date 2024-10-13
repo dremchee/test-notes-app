@@ -8,14 +8,29 @@ import AddButton from '@/src/elements/AddButton.vue';
 
 <template>
  <div class="container">
-  <HeaderNotesScreen />
+  <div class="header">
+   <HeaderNotesScreen />
+  </div>
   <div class="notes-content">
    <SearchFieldNotes />
    <SelectingNotesOrFolders />
-   <FolderBox />
+  </div>
+  <div class="footer">
    <AddButton />
   </div>
  </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.container {
+ display: flex;
+ flex-direction: column;
+ height: 100%;
+}
+
+
+.notes-content {
+ flex-grow: 1;
+ overflow-y: auto;
+}
+</style>

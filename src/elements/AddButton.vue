@@ -40,7 +40,7 @@ const toggleDropDown = () => {
 
 <style scoped>
 .add-button-container {
-  position: sticky;
+  position: fixed;
   bottom: 0;
   width: 100%;
   z-index: 20;

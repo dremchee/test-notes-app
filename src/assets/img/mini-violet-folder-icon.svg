@@ -1,19 +1,5 @@
-<svg width="86" height="80" viewBox="0 0 86 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#filter0_d_274_365)">
-<path opacity="0.4" d="M16 16.2286C16 11.6841 19.6265 8 24.1 8H33.55C38.0235 8 41.65 11.6841 41.65 16.2286V21.0286C41.65 25.5731 38.0235 29.2571 33.55 29.2571H24.1C19.6265 29.2571 16 25.5731 16 21.0286V16.2286Z" fill="#904AC7" style="fill:#904AC7;fill:color(display-p3 0.5647 0.2902 0.7804);fill-opacity:1;"/>
-<path d="M16 23.0857C16 18.5412 19.6265 14.8571 24.1 14.8571H61.9C66.3735 14.8571 70 18.5412 70 23.0857V47.7714C70 52.3159 66.3735 56 61.9 56H24.1C19.6265 56 16 52.3159 16 47.7714V23.0857Z" fill="#904AC7" style="fill:#904AC7;fill:color(display-p3 0.5647 0.2902 0.7804);fill-opacity:1;"/>
-<rect x="28.825" y="35.4286" width="28.35" height="4.11428" rx="2.05714" fill="white" style="fill:white;fill-opacity:1;"/>
-</g>
-<defs>
-<filter id="filter0_d_274_365" x="0" y="0" width="86" height="80" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feOffset dy="8"/>
-<feGaussianBlur stdDeviation="8"/>
-<feComposite in2="hardAlpha" operator="out"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_274_365"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_274_365" result="shape"/>
-</filter>
-</defs>
+<svg width="54" height="48" viewBox="0 0 54 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.4" d="M0 8.22857C0 3.68406 3.62649 0 8.1 0H17.55C22.0235 0 25.65 3.68406 25.65 8.22857V13.0286C25.65 17.5731 22.0235 21.2571 17.55 21.2571H8.1C3.62649 21.2571 0 17.5731 0 13.0286V8.22857Z" fill="#904AC7" style="fill:#904AC7;fill:color(display-p3 0.5647 0.2902 0.7804);fill-opacity:1;"/>
+<path d="M0 15.0857C0 10.5412 3.62649 6.85715 8.1 6.85715H45.9C50.3735 6.85715 54 10.5412 54 15.0857V39.7714C54 44.3159 50.3735 48 45.9 48H8.1C3.62649 48 0 44.3159 0 39.7714V15.0857Z" fill="#904AC7" style="fill:#904AC7;fill:color(display-p3 0.5647 0.2902 0.7804);fill-opacity:1;"/>
+<rect x="12.825" y="27.4286" width="28.35" height="4.11428" rx="2.05714" fill="white" style="fill:white;fill-opacity:1;"/>
 </svg>

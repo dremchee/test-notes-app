@@ -9,7 +9,7 @@ defineProps({
 <template>
   <div class="folder-box-container" :class="{ 'expanded-container': expanded }">
     <div v-if="expanded" class="expanded-folder-box-contant">
-      <img src="@/src/assets/img/mini-blue-folder-icon.svg" alt="">
+      <img class="expanded-folder-icon" src="@/src/assets/img/mini-blue-folder-icon.svg" alt="">
       <div class="expanded-folder-text">
         <div class="name-folder">Project folder</div>
         <div class="quantity-notes">10 notes</div>
@@ -35,7 +35,7 @@ defineProps({
 
 
     <div v-if="expanded" class="expanded-folder-box-contant">
-      <img src="@/src/assets/img/mini-green-folder-icon.svg" alt="">
+      <img class="expanded-folder-icon" src="@/src/assets/img/mini-green-folder-icon.svg" alt="">
       <div class="expanded-folder-text">
         <div class="name-folder">Project folder</div>
         <div class="quantity-notes">10 notes</div>
@@ -60,7 +60,7 @@ defineProps({
     </div>
 
     <div v-if="expanded" class="expanded-folder-box-contant">
-      <img src="@/src/assets/img/mini-violet-folder-icon.svg" alt="">
+      <img class="expanded-folder-icon" src="@/src/assets/img/mini-violet-folder-icon.svg" alt="">
       <div class="expanded-folder-text">
         <div class="name-folder">Project folder</div>
         <div class="quantity-notes">10 notes</div>
@@ -85,7 +85,7 @@ defineProps({
     </div>
 
     <div v-if="expanded" class="expanded-folder-box-contant">
-      <img src="@/src/assets/img/mini-red-folder-icon.svg" alt="">
+      <img class="expanded-folder-icon" src="@/src/assets/img/mini-red-folder-icon.svg" alt="">
       <div class="expanded-folder-text">
         <div class="name-folder">Project folder</div>
         <div class="quantity-notes">10 notes</div>
@@ -121,6 +121,15 @@ defineProps({
   gap: 1rem 20px;
 }
 
+.expanded-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 40px;
+  gap: 1.25rem 0rem;
+}
+
 .folder-box {
   position: relative;
   display: flex;
@@ -139,7 +148,7 @@ defineProps({
   height: 7rem;
   display: flex;
   flex-direction: row;
-  align-content: center;
+  align-items: center;
   justify-content: space-between;
   background-color: var(--color-white);
   border-radius: 24px;
@@ -154,6 +163,10 @@ defineProps({
   align-content: start;
 }
 
+/* .expanded-folder-icon {
+  display: flex;
+  align-items: center;
+} */
 
 .button-folder-drop-list {
   /* display: inline-flex;
@@ -182,6 +195,7 @@ defineProps({
   flex-direction: column;
   justify-content: center;
   width: 12.25rem;
+  padding: 0 1.5rem;
   /* margin-right: 2rem; */
 }
 

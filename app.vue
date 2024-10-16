@@ -36,7 +36,9 @@ body {
   min-height: 100%;
 }
 
-.conteainer {
-  padding: 1rem;
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 </style>

@@ -1,13 +1,23 @@
 <script setup lang="ts">
+import { ref } from 'vue';
 import SettingsIcon from '@/src/assets/img/icon-settings.svg'
+
+// const isSwitchingSettingsPage = ref(false);
+
+// const switchSettingsPage = () => {
+//  isSwitchingSettingsPage.value = !isSwitchingSettingsPage.value;
+
+// }
 </script>
 
 <template>
  <div class="header-notes">
   <div class="header-notes-title">Notes<span class="header-notes-blue-point">.</span></div>
-  <button class="settings-notes">
+  <nuxt-link class="settings-notes" to="/settingsScreen">
    <img class="settings-notes-icon" :src="SettingsIcon">
-  </button>
+  </nuxt-link>
+  <!-- <a class="settings-notes">
+  </a> -->
  </div>
 </template>
 
@@ -15,6 +25,7 @@ import SettingsIcon from '@/src/assets/img/icon-settings.svg'
 .header-notes {
  display: inline-flex;
  width: 100%;
+ height: 4rem;
  justify-content: space-between;
  align-items: center;
  padding: 0 40px;

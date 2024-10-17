@@ -15,8 +15,6 @@ definePageMeta({
   <BackButton />
   <HeaderName />
   <ProfileInformation />
-  <!-- <div class="text-content">Authorization</div>
-  <LoginButton /> -->
   <div class="text-content cloud-text">Cloud</div>
   <SyncContainer />
   <div class="settings-line-wrapper">
@@ -83,5 +81,6 @@ definePageMeta({
  font-weight: 500;
  color: var(--color-grey);
  background-color: var(--color-white);
+ box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.05);
 }
 </style>

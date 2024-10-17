@@ -2,6 +2,7 @@
 import { ref } from 'vue';
 import SettingsIcon from '@/src/assets/img/icon-settings.svg'
 
+
 // const isSwitchingSettingsPage = ref(false);
 
 // const switchSettingsPage = () => {
@@ -16,8 +17,6 @@ import SettingsIcon from '@/src/assets/img/icon-settings.svg'
   <nuxt-link class="settings-notes" to="/settingsScreen">
    <img class="settings-notes-icon" :src="SettingsIcon">
   </nuxt-link>
-  <!-- <a class="settings-notes">
-  </a> -->
  </div>
 </template>
 

@@ -5,7 +5,7 @@ import ForDataEntry from '@/src/components/entranceInAcc/components/ForDataEntry
 import HeaderName from '@/src/globalComponents/HeaderName.vue';
 
 definePageMeta({
- title: 'Login',
+ title: 'Create account',
 })
 </script>
 
@@ -21,11 +21,11 @@ definePageMeta({
 
   <ForDataEntry />
 
-  <LoginButton to="/authorizedSettings" name="Login" />
+  <LoginButton to="/authorizedSettings" name="Create" />
 
 
   <div class="login-link-for-create-new-acc-container">
-   <nuxt-link class="login-link-for-create-new-acc-text" to="/register">Create a new account</nuxt-link>
+   <nuxt-link class="login-link-for-create-new-acc-text" to="/login">Sign in</nuxt-link>
   </div>
  </div>
 </template>

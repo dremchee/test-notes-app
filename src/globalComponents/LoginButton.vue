@@ -1,9 +1,20 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+defineProps({
+ to: {
+  type: String,
+  required: true,
+ },
+ name: {
+  type: String,
+  required: true,
+ }
+})
+</script>
 
 <template>
  <div class="login-button-container">
-  <nuxt-link class="login-button" to="/login">
-   Login
+  <nuxt-link class="login-button" :to="to">
+   {{ name }}
   </nuxt-link>
  </div>
 </template>

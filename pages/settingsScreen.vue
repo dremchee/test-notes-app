@@ -15,7 +15,7 @@ definePageMeta({
   <BackButton />
   <HeaderName />
   <div class="text-content">Authorization</div>
-  <LoginButton />
+  <LoginButton to="/login" name="Login" />
   <div class="text-content cloud-text">Cloud</div>
   <SyncContainer />
   <div class="settings-line-wrapper">

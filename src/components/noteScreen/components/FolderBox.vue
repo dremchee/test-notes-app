@@ -116,8 +116,9 @@ defineProps({
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  padding: 20px 40px;
+  padding: 0px 40px;
   gap: 1rem 20px;
+  margin-top: 20px;
 }
 
 .expanded-container {
@@ -125,8 +126,9 @@ defineProps({
   height: 100vh;
   display: flex;
   flex-direction: column;
-  padding: 20px 40px;
+  padding: 0 40px;
   gap: 1.25rem 0rem;
+  margin-top: 20px;
 }
 
 .folder-box {

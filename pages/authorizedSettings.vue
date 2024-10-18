@@ -55,7 +55,6 @@ definePageMeta({
 }
 
 .settings-line {
- /* padding: 0 40px; */
  margin-top: 2.0625rem;
  width: 100%;
  height: 1px;

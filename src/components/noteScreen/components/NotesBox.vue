@@ -1,8 +1,23 @@
 <script setup lang="ts">
-import { defineProps } from 'vue';
+import { defineProps, ref, onMounted } from 'vue';
+
+const maxHeight = 80;
+const shouldClamp = ref(false);
 
 defineProps({
  expanded: Boolean,
+})
+
+const checkClamping = (el: HTMLElement) => {
+ if (el.scrollHeight > maxHeight) {
+  shouldClamp.value = true;
+ }
+}
+
+onMounted(async () => {
+ await nextTick();
+ const notesBoxes = document.querySelectorAll('.title-notes-small') as NodeListOf<HTMLElement>;
+ notesBoxes.forEach((box) => checkClamping(box));
 })
 </script>
 
@@ -13,7 +28,7 @@ defineProps({
    <div class="notes-date-create">September 12, 2024</div>
   </div>
 
-  <div v-else class="notes-box">
+  <div v-else class="notes-box" :class="{ 'clamped': shouldClamp }">
    <div class="title-notes title-notes-small">Lorem ipsum dolor sit amet</div>
    <div class="notes-date-create">September 12, 2024</div>
   </div>
@@ -23,7 +38,7 @@ defineProps({
    <div class="notes-date-create">September 12, 2024</div>
   </div>
 
-  <div v-else class="notes-box">
+  <div v-else class="notes-box" :class="{ 'clamped': shouldClamp }">
    <div class="title-notes title-notes-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed ...</div>
    <div class="notes-date-create">September 12, 2024</div>
   </div>
@@ -33,7 +48,7 @@ defineProps({
    <div class="notes-date-create">September 12, 2024</div>
   </div>
 
-  <div v-else class="notes-box">
+  <div v-else class="notes-box" :class="{ 'clamped': shouldClamp }">
    <div class="title-notes title-notes-small">Lorem ipsum dolor sit amet</div>
    <div class="notes-date-create">September 12, 2024</div>
   </div>
@@ -43,7 +58,7 @@ defineProps({
    <div class="notes-date-create">September 12, 2024</div>
   </div>
 
-  <div v-else class="notes-box">
+  <div v-else class="notes-box" :class="{ 'clamped': shouldClamp }">
    <div class="title-notes title-notes-small">Lorem ipsum dolor sit amet</div>
    <div class="notes-date-create">September 12, 2024</div>
   </div>
@@ -53,7 +68,7 @@ defineProps({
    <div class="notes-date-create">September 12, 2024</div>
   </div>
 
-  <div v-else class="notes-box">
+  <div v-else class="notes-box" :class="{ 'clamped': shouldClamp }">
    <div class="title-notes title-notes-small">Lorem ipsum dolor sit amet</div>
    <div class="notes-date-create">September 12, 2024</div>
   </div>
@@ -63,7 +78,7 @@ defineProps({
    <div class="notes-date-create">September 12, 2024</div>
   </div>
 
-  <div v-else class="notes-box">
+  <div v-else class="notes-box" :class="{ 'clamped': shouldClamp }">
    <div class="title-notes title-notes-small">Lorem ipsum dolor sit amet</div>
    <div class="notes-date-create">September 12, 2024</div>
   </div>
@@ -78,6 +93,7 @@ defineProps({
  gap: 1rem 20px;
  margin-top: 20px;
  padding: 0px 40px;
+ align-items: flex-start;
 }
 
 .expanded-notes-container {
@@ -99,6 +115,8 @@ defineProps({
  border-radius: 1.5rem;
  background-color: var(--color-white);
  padding: 1rem 1.25rem;
+ height: auto;
+ overflow: hidden;
 }
 
 .expanded-notes-box {
@@ -127,5 +145,16 @@ defineProps({
 .title-notes-small {
  max-height: 5rem;
  overflow: hidden;
+ text-overflow: ellipsis;
+ /* white-space: pre-wrap; */
+ display: -webkit-box;
+ -webkit-box-orient: vertical;
+ line-clamp: auto;
+ transition: -webkit-line-clamp 0.2s ease-in-out;
+}
+
+.clamped .title-notes-small {
+ -webkit-line-clamp: 3;
+ line-clamp: 3;
 }
 </style>

@@ -6,7 +6,7 @@ const shouldClamp = ref(false);
 
 defineProps({
  expanded: Boolean,
-})
+});
 
 const checkClamping = (el: HTMLElement) => {
  if (el.scrollHeight > maxHeight) {

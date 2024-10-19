@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import BackButton from '@/src/components/settings/components/BackButton.vue';
+import BackButton from '@/src/globalComponents/BackButton.vue';
 import HeaderName from '@/src/globalComponents/HeaderName.vue';
 import SyncContainer from '@/src/components/settings/components/SyncContainer.vue';
 import MenuSettings from '@/src/components/settings/components/MenuSettings.vue';
@@ -12,7 +12,7 @@ definePageMeta({
 
 <template>
  <div class="container settings">
-  <BackButton />
+  <BackButton to="/" />
   <HeaderName />
   <ProfileInformation />
   <div class="text-content cloud-text">Cloud</div>

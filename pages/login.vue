@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import IconLeft from '@/src/assets/img/icon-left.svg';
+import BackButton from '@/src/globalComponents/BackButton.vue';
 import LoginButton from '@/src/globalComponents/LoginButton.vue';
 import ForDataEntry from '@/src/components/entranceInAcc/components/ForDataEntry.vue';
 import HeaderName from '@/src/globalComponents/HeaderName.vue';
@@ -11,11 +11,7 @@ definePageMeta({
 
 <template>
  <div class="login-container">
-  <div class="back-button-container">
-   <nuxt-link to='/settingsScreen'>
-    <img class="icon-left" :src="IconLeft" alt="">
-   </nuxt-link>
-  </div>
+  <BackButton to="/settingsScreen" />
 
   <HeaderName />
 

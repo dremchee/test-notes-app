@@ -1,11 +1,18 @@
 <script setup lang="ts">
 import IconLeft from '@/src/assets/img/icon-left.svg'
 
+defineProps({
+ to: {
+  type: String,
+  required: true,
+ }
+})
+
 </script>
 
 <template>
  <div class="back-button-container">
-  <nuxt-link to='/'>
+  <nuxt-link :to="to">
    <img class="icon-left" :src="IconLeft" alt="">
   </nuxt-link>
  </div>

@@ -136,8 +136,8 @@ defineProps({
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 10.9375rem;
-  height: 10.9375rem;
+  width: 10.3rem;
+  height: 10.3rem;
   background-color: var(--color-white);
   border-radius: 24px;
   padding: 16px 20px;

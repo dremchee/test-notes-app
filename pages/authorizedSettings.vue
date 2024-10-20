@@ -12,7 +12,9 @@ definePageMeta({
 
 <template>
  <div class="container settings">
-  <BackButton to="/" />
+  <div class="back-button-container">
+   <BackButton to="/" />
+  </div>
   <HeaderName />
   <ProfileInformation />
   <div class="text-content cloud-text">Cloud</div>
@@ -32,10 +34,22 @@ definePageMeta({
 
 <style scoped>
 .container {
- /* display: flex; */
- /* flex-direction: column; */
+ display: flex;
+ flex-direction: column;
  min-height: 100vh;
- padding-bottom: 2rem;
+ /* padding-bottom: 2rem; */
+ /* padding: 0 40px; */
+ overflow-x: hidden;
+}
+
+.back-button-container {
+ display: flex;
+ height: 4rem;
+ width: 100%;
+ align-items: center;
+ padding: 0 40px;
+ padding-top: 40px;
+ padding-bottom: 20px;
 }
 
 .text-content {
@@ -47,22 +61,24 @@ definePageMeta({
 }
 
 .cloud-text {
- margin-top: 52px;
+ margin-top: 3.25rem;
 }
 
 .settings-line-wrapper {
  padding: 0 40px;
+ margin-top: 2.0625rem;
+ width: 100%;
 }
 
 .settings-line {
- margin-top: 2.0625rem;
- width: 100%;
  height: 1px;
  background-color: var(--color-light-grey);
 }
 
 .logout-container {
  padding: 0 40px;
+ margin-top: auto;
+ padding-bottom: 2rem;
 }
 
 
@@ -72,8 +88,8 @@ definePageMeta({
  align-items: center;
  text-decoration: none;
  border-radius: 12px;
- margin-top: 9rem;
- margin-bottom: 2rem;
+ margin-top: 7rem;
+ /* margin-bottom: 2rem; */
  width: 100%;
  height: 3.5rem;
  font-size: 20px;

@@ -12,7 +12,9 @@ definePageMeta({
 
 <template>
  <div class="login-container">
-  <BackButton to="/settingsScreen" />
+  <div class="back-button-container">
+   <BackButton to="/settingsScreen" />
+  </div>
 
   <HeaderName />
 

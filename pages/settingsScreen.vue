@@ -12,7 +12,9 @@ definePageMeta({
 
 <template>
  <div class="container settings">
-  <BackButton to="/" />
+  <div class="back-button-container">
+   <BackButton to="/" />
+  </div>
   <HeaderName />
   <div class="text-content">Authorization</div>
   <LoginButton to="/login" name="Login" />
@@ -28,6 +30,16 @@ definePageMeta({
 </template>
 
 <style scoped>
+.back-button-container {
+ display: flex;
+ height: 4rem;
+ width: 100%;
+ align-items: center;
+ padding: 0 40px;
+ padding-top: 40px;
+ padding-bottom: 20px;
+}
+
 .container {
  display: flex;
  flex-direction: column;
@@ -51,7 +63,7 @@ definePageMeta({
 }
 
 .settings-line {
- /* padding: 0 40px; */
+ padding: 0 40px;
  margin-top: 2.0625rem;
  width: 100%;
  height: 1px;

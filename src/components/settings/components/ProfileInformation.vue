@@ -15,7 +15,7 @@
 
 <style scroped>
 .profile-information-container {
- padding: 0 40px;
+ padding: 0 2rem;
  margin-top: 2.4375rem;
 }
 

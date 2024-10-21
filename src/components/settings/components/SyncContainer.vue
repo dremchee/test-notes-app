@@ -15,7 +15,7 @@
 <style scoped>
 .sync-container {
  display: inline-flex;
- padding: 0 40px;
+ padding: 0 2rem;
  margin-top: 1.75rem;
  justify-content: space-between;
  width: 100%;

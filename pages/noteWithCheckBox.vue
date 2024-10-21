@@ -60,7 +60,7 @@ import ToolsMenu from '@/src/components/note/components/ToolsMenu.vue';
 .note-content-container {
  display: flex;
  flex-direction: column;
- padding: 0 40px;
+ padding: 0 2rem;
  margin-top: 1.3125rem;
  margin-bottom: 2rem;
  flex-grow: 1;
@@ -138,5 +138,10 @@ import ToolsMenu from '@/src/components/note/components/ToolsMenu.vue';
 
 .note-task-input-checkbox:checked+.note-task-work-checkbox::before {
  opacity: 1;
+}
+
+.note-task-checkbox input:checked~.note-task-text {
+ color: var(--color-blue);
+ transition: 0.3s ease-in-out;
 }
 </style>

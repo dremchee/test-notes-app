@@ -34,7 +34,7 @@ definePageMeta({
  height: 4rem;
  width: 100%;
  align-items: center;
- padding: 0 40px;
+ padding: 0 2rem;
  padding-top: 40px;
  padding-bottom: 20px;
 }

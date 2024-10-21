@@ -27,7 +27,7 @@ import SettingsIcon from '@/src/assets/img/icon-settings.svg'
  height: 4rem;
  justify-content: space-between;
  align-items: center;
- padding: 0 40px;
+ padding: 0 2rem;
  padding-top: 40px;
  padding-bottom: 20px;
 }

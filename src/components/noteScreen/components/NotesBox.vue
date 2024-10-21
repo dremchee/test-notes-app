@@ -103,14 +103,14 @@ onMounted(async () => {
  flex-wrap: wrap;
  gap: 1rem 20px;
  margin-top: 20px;
- padding: 0px 40px;
+ padding: 0 2rem;
  align-items: flex-start;
 }
 
 .expanded-notes-container {
  display: flex;
  width: 100%;
- padding: 0px 40px;
+ padding: 0px 2rem;
  gap: 1.25rem 0rem;
  height: 100vh;
  flex-direction: column;

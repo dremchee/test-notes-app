@@ -89,7 +89,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 0 40px;
+  padding: 0 2rem;
   margin-top: 1.6875rem;
 }
 

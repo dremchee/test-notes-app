@@ -35,7 +35,7 @@ definePageMeta({
  height: 4rem;
  width: 100%;
  align-items: center;
- padding: 0 40px;
+ padding: 0 2rem;
  padding-top: 40px;
  padding-bottom: 20px;
 }
@@ -51,7 +51,7 @@ definePageMeta({
  font-size: 20px;
  color: var(--color-almost-very-light-grey);
  margin-top: 34px;
- padding: 0 40px;
+ padding: 0 2rem;
 }
 
 .cloud-text {
@@ -59,11 +59,11 @@ definePageMeta({
 }
 
 .settings-line-wrapper {
- padding: 0 40px;
+ padding: 0 2rem;
 }
 
 .settings-line {
- padding: 0 40px;
+ padding: 0 2rem;
  margin-top: 2.0625rem;
  width: 100%;
  height: 1px;

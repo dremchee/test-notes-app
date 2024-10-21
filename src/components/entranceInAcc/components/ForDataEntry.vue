@@ -17,7 +17,7 @@
 <style scoped>
 .container-for-data-entry {
  margin-top: 2.125rem;
- padding: 0 40px;
+ padding: 0 2rem;
  display: flex;
  flex-direction: column;
 }

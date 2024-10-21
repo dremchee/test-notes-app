@@ -26,7 +26,7 @@ defineProps({
  width: 100%;
  height: 3.5rem;
  margin-top: 26px;
- padding: 0 40px;
+ padding: 0 2rem;
 }
 
 .login-button {

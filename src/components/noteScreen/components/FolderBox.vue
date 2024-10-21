@@ -116,17 +116,18 @@ defineProps({
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  padding: 0px 40px;
+  justify-content: flex-start;
+  padding: 0 2rem;
   gap: 1rem 20px;
   margin-top: 20px;
 }
 
 .expanded-container {
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   flex-direction: column;
-  padding: 0 40px;
+  padding: 0 2rem;
   gap: 1.25rem 0rem;
   margin-top: 20px;
 }

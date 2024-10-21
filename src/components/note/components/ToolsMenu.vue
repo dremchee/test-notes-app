@@ -46,7 +46,7 @@
   justify-content: center;
   width: 100%;
   margin-top: auto;
-  padding: 0 40px;
+  padding: 0 2rem;
   padding-bottom: 2rem;
 }
 

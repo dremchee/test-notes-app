@@ -43,7 +43,7 @@ import ImgWithCats from '@/src/assets/img/big-img-with-cats.svg';
 .note-content-container {
  display: flex;
  flex-direction: column;
- padding: 0 40px;
+ padding: 0 2rem;
  margin-top: 1.3125rem;
  margin-bottom: 2rem;
  flex-grow: 1;

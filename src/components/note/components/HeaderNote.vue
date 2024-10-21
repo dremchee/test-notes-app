@@ -36,7 +36,7 @@ import IconTrash from '@/src/assets/img/icon-trash.svg';
 .note-header-container {
   display: flex;
   flex-direction: row;
-  padding: 0 40px;
+  padding: 0 2rem;
   height: 6rem;
   width: 100%;
   align-items: center;

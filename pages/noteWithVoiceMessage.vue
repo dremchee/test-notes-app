@@ -2,6 +2,7 @@
 import HeaderNote from '@/src/components/note/components/HeaderNote.vue';
 import DateCreationNote from '@/src/globalComponents/DateCreationNote.vue';
 import ToolsMenu from '@/src/components/note/components/ToolsMenu.vue';
+import VoiceMessage from '@/src/components/note/components/VoiceMessage.vue';
 </script>
 
 <template>
@@ -18,6 +19,10 @@ import ToolsMenu from '@/src/components/note/components/ToolsMenu.vue';
    <div class="note-content">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
     aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+   </div>
+
+   <div class="voice-message-content">
+    <VoiceMessage />
    </div>
   </div>
   <ToolsMenu />
@@ -58,5 +63,9 @@ import ToolsMenu from '@/src/components/note/components/ToolsMenu.vue';
  font-size: 36px;
  font-weight: 600;
  color: var(--color-black);
+}
+
+.voice-message-content {
+ margin-top: 1.3125rem;
 }
 </style>

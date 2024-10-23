@@ -10,7 +10,7 @@
 .search-container {
  display: flex;
  justify-content: center;
- padding: 25px 40px;
+ padding: 25px 2rem;
  width: 100%;
 }
 

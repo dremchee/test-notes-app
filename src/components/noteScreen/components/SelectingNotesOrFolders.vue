@@ -55,7 +55,7 @@ const openFolder = () => {
   display: flex;
   gap: 0px 20px;
   width: 100%;
-  padding: 20px 40px;
+  padding: 20px 2rem;
 }
 
 .selecting {
@@ -67,6 +67,8 @@ const openFolder = () => {
   cursor: pointer;
   text-decoration: none;
   border-radius: 40px;
+  gap: 0 6px;
+  padding: 0 10px;
   /* margin-right: 20px; */
   color: var(--color-grey);
   font-weight: 500;
@@ -76,10 +78,10 @@ const openFolder = () => {
   color: var(--color-blue);
 }
 
-svg {
+/* svg {
   margin-left: 1rem;
   margin-right: 10px;
-}
+} */
 
 .selecting svg path {
   fill: var(--color-grey);

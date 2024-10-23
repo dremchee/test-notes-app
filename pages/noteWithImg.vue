@@ -31,15 +31,6 @@ import ImgWithCats from '@/src/assets/img/big-img-with-cats.svg';
 </template>
 
 <style scoped>
-.note-container {
- /* position: relative; */
- display: flex;
- flex-direction: column;
- min-height: 100vh;
- width: 100%;
- overflow-x: hidden;
-}
-
 .note-content-container {
  display: flex;
  flex-direction: column;

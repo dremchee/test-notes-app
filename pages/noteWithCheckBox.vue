@@ -48,15 +48,6 @@ import ToolsMenu from '@/src/components/note/components/ToolsMenu.vue';
 </template>
 
 <style scoped>
-.note-container {
- /* position: relative; */
- display: flex;
- flex-direction: column;
- min-height: 100vh;
- width: 100%;
- overflow-x: hidden;
-}
-
 .note-content-container {
  display: flex;
  flex-direction: column;
@@ -69,7 +60,6 @@ import ToolsMenu from '@/src/components/note/components/ToolsMenu.vue';
 .note-content {
  margin-top: 1.1875rem;
  font-size: 20px;
- /* margin-bottom: 2rem; */
 }
 
 .title-note-container {

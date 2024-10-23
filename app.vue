@@ -41,4 +41,12 @@ body {
   flex-direction: column;
   height: 100vh;
 }
+
+.note-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
 </style>

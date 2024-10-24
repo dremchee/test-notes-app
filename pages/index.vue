@@ -2,7 +2,6 @@
 import HeaderNotesScreen from '@/src/components/noteScreen/components/HeaderNotesScreen.vue';
 import SearchFieldNotes from '@/src/components/noteScreen/components/SearchFieldNotes.vue';
 import SelectingNotesOrFolders from '@/src/components/noteScreen/components/SelectingNotesOrFolders.vue';
-// import FolderBox from '@/src/elements/FolderBox.vue';
 import AddButton from '@/src/components/noteScreen/components/AddButton.vue';
 </script>
 

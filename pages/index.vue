@@ -1,47 +1,40 @@
-<script lang="ts" setup>
-import { computed, ref, storeToRefs } from '#imports';
-import CardFolder from '~/components/ui/CardFolder.vue';
-import { useNotesStore } from '~/store/notes';
-
-const { createNote } = useNotesStore()
-const { notes } = storeToRefs(useNotesStore())
-
-const previewMode = ref<"card" | "row">("card")
-const addNote = () => {
-  createNote({
-    id: Date.now().toString(),
-    title: "Test",
-    content: "Test",
-    createdAt: new Date(),
-    updatedAt: new Date(),
-  })
-}
+<script setup lang="ts">
+import HeaderNotesScreen from '@/src/components/noteScreen/components/HeaderNotesScreen.vue';
+import SearchFieldNotes from '@/src/components/noteScreen/components/SearchFieldNotes.vue';
+import SelectingNotesOrFolders from '@/src/components/noteScreen/components/SelectingNotesOrFolders.vue';
+import AddButton from '@/src/components/noteScreen/components/AddButton.vue';
 </script>
 
 <template>
-  <Icon name="icon:icon-lock" />
-  <button @click="addNote">Create</button>
-  <pre>{{ notes }}</pre>
-  <div>
-    <input type="radio" name="mode" v-model="previewMode" value="card"> Card
-    <input type="radio" name="mode" v-model="previewMode" value="row"> Row
-  </div>
-  <div class="list" :class="{
-    [`_${previewMode}`]: true
-  }">
-    <CardFolder :variant="previewMode" />
-    <CardFolder :variant="previewMode" />
+  <div class="container">
+    <div class="header">
+      <HeaderNotesScreen />
+    </div>
+    <div class="notes-content">
+      <SearchFieldNotes />
+      <SelectingNotesOrFolders />
+    </div>
+    <div class="footer">
+      <AddButton />
+    </div>
   </div>
 </template>
 
 <style scoped>
-.list {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-
-  &._row {
-    grid-template-columns: 1fr;
-  }
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
+
+
+.notes-content {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding-bottom: 9rem;
+}
+
+/* .footer {
+  height: 20%;
+} */
 </style>

@@ -88,6 +88,7 @@ const toggleDropDown = () => {
   background-color: var(--color-white);
   z-index: 10;
   border-radius: 40px;
+  box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.1);
 }
 
 .select {

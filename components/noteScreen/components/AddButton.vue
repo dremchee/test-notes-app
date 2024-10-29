@@ -61,7 +61,7 @@ const toggleDropDown = () => {
   background-color: var(--color-blue);
   border: none;
   cursor: pointer;
-  background-image: url("@/src/assets/img/plus-icon.svg");
+  background-image: url("@/assets/img/plus-icon.svg");
   background-repeat: no-repeat;
   background-position: center;
 }

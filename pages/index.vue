@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import HeaderNotesScreen from '@/src/components/noteScreen/components/HeaderNotesScreen.vue';
-import SearchFieldNotes from '@/src/components/noteScreen/components/SearchFieldNotes.vue';
-import SelectingNotesOrFolders from '@/src/components/noteScreen/components/SelectingNotesOrFolders.vue';
-import AddButton from '@/src/components/noteScreen/components/AddButton.vue';
+import HeaderNotesScreen from '@/components/noteScreen/components/HeaderNotesScreen.vue';
+import SearchFieldNotes from '@/components/noteScreen/components/SearchFieldNotes.vue';
+import SelectingNotesOrFolders from '@/components/noteScreen/components/SelectingNotesOrFolders.vue';
+import AddButton from '@/components/noteScreen/components/AddButton.vue';
 </script>
 
 <template>

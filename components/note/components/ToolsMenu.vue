@@ -34,7 +34,7 @@
         </svg>
       </button>
       <button class="button-drop-list">
-        <img class="folder-drop-list" src="@/src/assets/img/icon-more.svg" alt="">
+        <img class="folder-drop-list" src="@/assets/img/icon-more.svg" alt="">
       </button>
     </div>
   </div>

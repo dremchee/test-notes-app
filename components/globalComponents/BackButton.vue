@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import IconLeft from '@/src/assets/img/icon-left.svg'
+import IconLeft from '@/assets/img/icon-left.svg'
 
 defineProps({
  to: {

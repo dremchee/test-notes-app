@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import HeaderName from '@/src/globalComponents/HeaderName.vue';
-import BackButton from '@/src/globalComponents/BackButton.vue';
-import LoginButton from '@/src/globalComponents/LoginButton.vue';
-import SyncContainer from '@/src/components/settings/components/SyncContainer.vue';
-import MenuSettings from '@/src/components/settings/components/MenuSettings.vue';
+import HeaderName from '@/components/globalComponents/HeaderName.vue';
+import BackButton from '@/components/globalComponents/BackButton.vue';
+import LoginButton from '@/components/globalComponents/LoginButton.vue';
+import SyncContainer from '@/components/settings/components/SyncContainer.vue';
+import MenuSettings from '@/components/settings/components/MenuSettings.vue';
 
 definePageMeta({
  title: 'Settings',

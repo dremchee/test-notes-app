@@ -3,7 +3,7 @@
 <template>
  <div class="profile-information-container">
   <div class="profile-information-content">
-   <img src="@/src/assets/img/profile-image.svg" class="profile-image">
+   <img src="@/assets/img/profile-image.svg" class="profile-image">
 
    <div class="profile-information-text-info">
     <div class="profile-information-title">Manager user</div>

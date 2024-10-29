@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import BackButton from '@/src/globalComponents/BackButton.vue';
+import BackButton from '@/components/globalComponents/BackButton.vue';
 
-import IconTrash from '@/src/assets/img/icon-trash.svg';
+import IconTrash from '@/assets/img/icon-trash.svg';
 </script>
 
 <template>

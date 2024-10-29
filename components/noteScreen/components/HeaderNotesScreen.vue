@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import SettingsIcon from '@/src/assets/img/icon-settings.svg'
+import SettingsIcon from '@/assets/img/icon-settings.svg'
 
 
 // const isSwitchingSettingsPage = ref(false);

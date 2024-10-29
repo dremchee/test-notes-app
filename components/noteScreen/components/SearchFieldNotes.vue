@@ -30,7 +30,7 @@
 }
 
 .search-field-notes.icon {
- background-image: url("@/src/assets/img/search-notes-icon.svg");
+ background-image: url("@/assets/img/search-notes-icon.svg");
  background-repeat: no-repeat;
  background-position: 1.1rem;
 }

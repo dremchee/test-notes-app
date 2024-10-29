@@ -9,21 +9,21 @@ defineProps({
 <template>
   <div class="folder-box-container" :class="{ 'expanded-container': expanded }">
     <div v-if="expanded" class="expanded-folder-box-contant">
-      <img class="expanded-folder-icon" src="@/src/assets/img/mini-blue-folder-icon.svg" alt="">
+      <img class="expanded-folder-icon" src="@/assets/img/mini-blue-folder-icon.svg" alt="">
       <div class="expanded-folder-text">
         <div class="name-folder">Project folder</div>
         <div class="quantity-notes">10 notes</div>
       </div>
       <button class="button-folder-drop-list">
-        <img class="folder-drop-list" src="@/src/assets/img/icon-more.svg" alt="">
+        <img class="folder-drop-list" src="@/assets/img/icon-more.svg" alt="">
       </button>
     </div>
 
     <div v-else class="folder-box">
       <div class=" folder-box-img-container">
-        <img class="folder-icon" src="@/src/assets/img/blue-folder.svg" alt="">
+        <img class="folder-icon" src="@/assets/img/blue-folder.svg" alt="">
         <button class="button-folder-drop-list">
-          <img class="folder-drop-list" src="@/src/assets/img/icon-more.svg" alt="">
+          <img class="folder-drop-list" src="@/assets/img/icon-more.svg" alt="">
         </button>
       </div>
 
@@ -35,21 +35,21 @@ defineProps({
 
 
     <div v-if="expanded" class="expanded-folder-box-contant">
-      <img class="expanded-folder-icon" src="@/src/assets/img/mini-green-folder-icon.svg" alt="">
+      <img class="expanded-folder-icon" src="@/assets/img/mini-green-folder-icon.svg" alt="">
       <div class="expanded-folder-text">
         <div class="name-folder">Project folder so ...</div>
         <div class="quantity-notes">10 notes</div>
       </div>
       <button class="button-folder-drop-list">
-        <img class="folder-drop-list" src="@/src/assets/img/icon-more.svg" alt="">
+        <img class="folder-drop-list" src="@/assets/img/icon-more.svg" alt="">
       </button>
     </div>
 
     <div v-else class="folder-box">
       <div class=" folder-box-img-container">
-        <img class="folder-icon" src="@/src/assets/img/green-folder.svg" alt="">
+        <img class="folder-icon" src="@/assets/img/green-folder.svg" alt="">
         <button class="button-folder-drop-list">
-          <img class="folder-drop-list" src="@/src/assets/img/icon-more.svg" alt="">
+          <img class="folder-drop-list" src="@/assets/img/icon-more.svg" alt="">
         </button>
       </div>
 
@@ -60,21 +60,21 @@ defineProps({
     </div>
 
     <div v-if="expanded" class="expanded-folder-box-contant">
-      <img class="expanded-folder-icon" src="@/src/assets/img/mini-violet-folder-icon.svg" alt="">
+      <img class="expanded-folder-icon" src="@/assets/img/mini-violet-folder-icon.svg" alt="">
       <div class="expanded-folder-text">
         <div class="name-folder">Project folder</div>
         <div class="quantity-notes">10 notes</div>
       </div>
       <button class="button-folder-drop-list">
-        <img class="folder-drop-list" src="@/src/assets/img/icon-more.svg" alt="">
+        <img class="folder-drop-list" src="@/assets/img/icon-more.svg" alt="">
       </button>
     </div>
 
     <div v-else class="folder-box">
       <div class=" folder-box-img-container">
-        <img class="folder-icon" src="@/src/assets/img/violet-folder.svg" alt="">
+        <img class="folder-icon" src="@/assets/img/violet-folder.svg" alt="">
         <button class="button-folder-drop-list">
-          <img class="folder-drop-list" src="@/src/assets/img/icon-more.svg" alt="">
+          <img class="folder-drop-list" src="@/assets/img/icon-more.svg" alt="">
         </button>
       </div>
 
@@ -85,21 +85,21 @@ defineProps({
     </div>
 
     <div v-if="expanded" class="expanded-folder-box-contant">
-      <img class="expanded-folder-icon" src="@/src/assets/img/mini-red-folder-icon.svg" alt="">
+      <img class="expanded-folder-icon" src="@/assets/img/mini-red-folder-icon.svg" alt="">
       <div class="expanded-folder-text">
         <div class="name-folder">Project folder</div>
         <div class="quantity-notes">10 notes</div>
       </div>
       <button class="button-folder-drop-list">
-        <img class="folder-drop-list" src="@/src/assets/img/icon-more.svg" alt="">
+        <img class="folder-drop-list" src="@/assets/img/icon-more.svg" alt="">
       </button>
     </div>
 
     <div v-else class="folder-box">
       <div class=" folder-box-img-container">
-        <img class="folder-icon" src="@/src/assets/img/red-folder.svg" alt="">
+        <img class="folder-icon" src="@/assets/img/red-folder.svg" alt="">
         <button class="button-folder-drop-list">
-          <img class="folder-drop-list" src="@/src/assets/img/icon-more.svg" alt="">
+          <img class="folder-drop-list" src="@/assets/img/icon-more.svg" alt="">
         </button>
       </div>
 

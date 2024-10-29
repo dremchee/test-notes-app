@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import HeaderNote from '@/src/components/note/components/HeaderNote.vue';
-import DateCreationNote from '@/src/globalComponents/DateCreationNote.vue';
-import ToolsMenu from '@/src/components/note/components/ToolsMenu.vue';
+import HeaderNote from '@/components/note/components/HeaderNote.vue';
+import DateCreationNote from '@/components/globalComponents/DateCreationNote.vue';
+import ToolsMenu from '@/components/note/components/ToolsMenu.vue';
 
-import ImgWithCats from '@/src/assets/img/big-img-with-cats.svg';
+import ImgWithCats from '@/assets/img/big-img-with-cats.svg';
 </script>
 
 <template>

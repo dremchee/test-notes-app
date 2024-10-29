@@ -1,9 +1,8 @@
 <script setup lang="ts">
-import BackButton from '@/src/globalComponents/BackButton.vue';
-import IconLeft from '@/src/assets/img/icon-left.svg';
-import LoginButton from '@/src/globalComponents/LoginButton.vue';
-import ForDataEntry from '@/src/components/entranceInAcc/components/ForDataEntry.vue';
-import HeaderName from '@/src/globalComponents/HeaderName.vue';
+import BackButton from '@/components/globalComponents/BackButton.vue';
+import LoginButton from '@/components/globalComponents/LoginButton.vue';
+import ForDataEntry from '@/components/entranceInAcc/components/ForDataEntry.vue';
+import HeaderName from '@/components/globalComponents/HeaderName.vue';
 
 definePageMeta({
  title: 'Create account',

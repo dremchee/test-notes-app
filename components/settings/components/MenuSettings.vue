@@ -25,7 +25,7 @@ const switchExpanded = (key: keyof typeof expanded.value) => {
           <button class="settings-list-button" @click="switchExpanded('fontSize')">
             <span class="settings-list-span-output">
               Medium
-              <img class="arrow-dropdown" src="@/src/assets/img/icon-arrow-drop-down.svg" alt="" />
+              <img class="arrow-dropdown" src="@/assets/img/icon-arrow-drop-down.svg" alt="" />
             </span>
             <ul v-show="expanded.fontSize" class="settings-list">
               <li><span class="selection-button">Small</span></li>
@@ -44,7 +44,7 @@ const switchExpanded = (key: keyof typeof expanded.value) => {
           <button class="settings-list-button" @click="switchExpanded('sort')">
             <span class="settings-list-span-output">
               Date created
-              <img class="arrow-dropdown" src="@/src/assets/img/icon-arrow-drop-down.svg" alt="" />
+              <img class="arrow-dropdown" src="@/assets/img/icon-arrow-drop-down.svg" alt="" />
             </span>
             <ul v-show="expanded.sort" class="settings-list">
               <li><span class="selection-button">Date change</span></li>
@@ -64,7 +64,7 @@ const switchExpanded = (key: keyof typeof expanded.value) => {
           <button class="settings-list-button" @click="switchExpanded('layout')">
             <span class="settings-list-span-output">
               Grid
-              <img class="arrow-dropdown" src="@/src/assets/img/icon-arrow-drop-down.svg" alt="" />
+              <img class="arrow-dropdown" src="@/assets/img/icon-arrow-drop-down.svg" alt="" />
             </span>
             <ul v-show="expanded.layout" class="settings-list">
               <li><span class="selection-button">List</span></li>
@@ -81,7 +81,7 @@ const switchExpanded = (key: keyof typeof expanded.value) => {
             <button class="settings-list-button" @click="switchExpanded('theme')">
               <span class="settings-list-span-output">
                 System
-                <img class="arrow-dropdown" src="@/src/assets/img/icon-arrow-drop-down.svg" alt="" />
+                <img class="arrow-dropdown" src="@/assets/img/icon-arrow-drop-down.svg" alt="" />
               </span>
               <ul v-show="expanded.theme" class="settings-list">
                 <li><span class="selection-button">Light</span></li>

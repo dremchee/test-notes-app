@@ -71,6 +71,7 @@ const props = defineProps({
 .card-folder-visual-content.expanded {
  /* align-items: center; */
  justify-content: space-between;
+ align-items: center;
 }
 
 .card-folder-inited-icon-and-text-info {
@@ -85,15 +86,15 @@ const props = defineProps({
  background-color: transparent;
 }
 
-.button-color-selection-folder svg {
+.button-color-selection-folder img {
  max-width: 2rem;
- width: 100%;
+ /* width: 100%; */
 }
 
 .card-folder-text-info {
  display: flex;
  flex-direction: column;
- margin-top: 10px;
+ margin-top: 0.5rem;
 }
 
 .card-folder-text-info.expanded {

@@ -21,7 +21,7 @@ const props = defineProps({
  margin-bottom: 20px;
  gap: 1rem;
  align-items: start;
- padding-bottom: 5rem;
+ padding-bottom: 3.5rem;
 }
 
 .folders-notes-box-container.expanded {

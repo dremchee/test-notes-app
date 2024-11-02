@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import BackButton from '@/components/globalComponents/BackButton.vue';
+// import BackButton from '@/components/globalComponents/BackButton.vue';
+import BackButtonComponents from '@/layouts/BackButtonContainer.vue';
 import HeaderName from '@/components/globalComponents/HeaderName.vue';
 import SyncContainer from '@/components/settings/components/SyncContainer.vue';
 import MenuSettings from '@/components/settings/components/MenuSettings.vue';
@@ -12,9 +13,7 @@ definePageMeta({
 
 <template>
  <div class="container settings">
-  <div class="back-button-container">
-   <BackButton to="/" />
-  </div>
+  <BackButtonComponents to="/" />
   <HeaderName />
   <ProfileInformation />
   <div class="text-content cloud-text">Cloud</div>
@@ -37,19 +36,7 @@ definePageMeta({
  display: flex;
  flex-direction: column;
  min-height: 100vh;
- /* padding-bottom: 2rem; */
- /* padding: 0 40px; */
  overflow-x: hidden;
-}
-
-.back-button-container {
- display: flex;
- height: 4rem;
- width: 100%;
- align-items: center;
- padding: 0 2rem;
- padding-top: 40px;
- padding-bottom: 20px;
 }
 
 .text-content {

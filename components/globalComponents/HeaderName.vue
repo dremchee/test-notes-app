@@ -16,6 +16,6 @@ const route = useRoute();
  font-weight: 600;
  color: var(--color-black);
  padding: 0 2rem;
- margin-top: 2.125rem;
+ padding-top: 5rem;
 }
 </style>

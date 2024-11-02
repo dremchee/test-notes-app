@@ -1,40 +1,29 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+// import IconFont from '@/assets/img/icon-font.svg';
+// import IconImage from '@/assets/img/icon-image.svg';
+// import IconMic from '@/assets/img/icon-mic.svg';
+// import IconMarker from '@/assets/img/icon-marker.svg';
+// import IconMore from '@/assets/img/icon-more.svg'; 
+</script>
 
 <template>
 
   <div class="note-footer">
     <div class="note-footer-tools-menu">
-      <button class="note-footer-tools-menu-icon-font">
-        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M13.3333 8.00004V28H10.6667V8.00004H2.66667V5.33337H21.3333V8.00004H13.3333ZM24 18.6667V28H21.3333V18.6667H17.3333V16H28V18.6667H24Z"
-            fill="black" style="currentColor" />
-        </svg>
+      <button class="note-footer-tools-menu-icon">
+        <img src="@/assets/img/icon-font.svg" alt="">
       </button>
-
-      <button class="note-footer-tools-menu-icon-img">
-        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M3.98934 28C3.63842 27.9996 3.302 27.86 3.05399 27.6117C2.80598 27.3635 2.66667 27.0269 2.66667 26.676V5.324C2.66911 4.97384 2.80921 4.63869 3.05669 4.39096C3.30417 4.14322 3.63918 4.00279 3.98934 4H28.0107C28.7413 4 29.3333 4.59333 29.3333 5.324V26.676C29.3309 27.0262 29.1908 27.3613 28.9433 27.609C28.6958 27.8568 28.3608 27.9972 28.0107 28H3.98934ZM26.6667 20V6.66667H5.33334V25.3333L18.6667 12L26.6667 20ZM26.6667 23.7707L18.6667 15.7707L9.10401 25.3333H26.6667V23.7707ZM10.6667 14.6667C9.95943 14.6667 9.28115 14.3857 8.78105 13.8856C8.28096 13.3855 8.00001 12.7072 8.00001 12C8.00001 11.2928 8.28096 10.6145 8.78105 10.1144C9.28115 9.61428 9.95943 9.33333 10.6667 9.33333C11.3739 9.33333 12.0522 9.61428 12.5523 10.1144C13.0524 10.6145 13.3333 11.2928 13.3333 12C13.3333 12.7072 13.0524 13.3855 12.5523 13.8856C12.0522 14.3857 11.3739 14.6667 10.6667 14.6667Z"
-            fill="black" style="currentColor" />
-        </svg>
+      <button class="note-footer-tools-menu-icon">
+        <img src="@/assets/img/icon-image.svg" alt="">
       </button>
-      <button class="note-footer-tools-menu-icon-mic">
-        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M16 4.00004C14.9391 4.00004 13.9217 4.42147 13.1716 5.17161C12.4214 5.92176 12 6.93918 12 8.00004V16C12 17.0609 12.4214 18.0783 13.1716 18.8285C13.9217 19.5786 14.9391 20 16 20C17.0609 20 18.0783 19.5786 18.8284 18.8285C19.5786 18.0783 20 17.0609 20 16V8.00004C20 6.93918 19.5786 5.92176 18.8284 5.17161C18.0783 4.42147 17.0609 4.00004 16 4.00004ZM16 1.33337C16.8755 1.33337 17.7424 1.50581 18.5512 1.84084C19.3601 2.17588 20.095 2.66694 20.714 3.286C21.3331 3.90505 21.8242 4.63998 22.1592 5.44882C22.4942 6.25766 22.6667 7.12456 22.6667 8.00004V16C22.6667 17.7682 21.9643 19.4638 20.714 20.7141C19.4638 21.9643 17.7681 22.6667 16 22.6667C14.2319 22.6667 12.5362 21.9643 11.286 20.7141C10.0357 19.4638 9.33333 17.7682 9.33333 16V8.00004C9.33333 6.23193 10.0357 4.53624 11.286 3.286C12.5362 2.03575 14.2319 1.33337 16 1.33337ZM2.92 18.6147L5.536 18.092C6.02185 20.5086 7.32937 22.6825 9.23641 24.2443C11.1434 25.8061 13.5324 26.6595 15.9973 26.6595C18.4623 26.6595 20.8512 25.8061 22.7583 24.2443C24.6653 22.6825 25.9728 20.5086 26.4587 18.092L29.0747 18.6147C27.86 24.7267 22.4667 29.3334 15.9987 29.3334C9.53067 29.3334 4.136 24.7267 2.92 18.6147Z"
-            fill="black" style="currentColor" />
-        </svg>
+      <button class="note-footer-tools-menu-icon">
+        <img src="@/assets/img/icon-mic.svg" alt="">
       </button>
-      <button class="note-footer-tools-menu-icon-marker"><svg width="32" height="32" viewBox="0 0 32 32" fill="none"
-          xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M20.324 6.01465L11.34 15L10.3973 17.8266L9.01066 19.216L12.7813 22.9866L14.168 21.6L16.9973 20.656L25.98 11.6733L20.324 6.01465ZM28.8093 10.7293C29.0593 10.9794 29.1997 11.3184 29.1997 11.672C29.1997 12.0255 29.0593 12.3646 28.8093 12.6146L18.4387 22.9853L15.6093 23.928L13.724 25.8146C13.474 26.0646 13.1349 26.205 12.7813 26.205C12.4278 26.205 12.0887 26.0646 11.8387 25.8146L6.18133 20.1573C5.93137 19.9073 5.79094 19.5682 5.79094 19.2146C5.79094 18.8611 5.93137 18.522 6.18133 18.272L8.06666 16.3866L9.00933 13.5573L19.3813 3.18665C19.6314 2.93669 19.9704 2.79626 20.324 2.79626C20.6775 2.79626 21.0166 2.93669 21.2667 3.18665L28.8093 10.7293ZM20.324 9.78665L22.2093 11.672L15.6093 18.272L13.724 16.3866L20.324 9.78665ZM5.71066 22.5146L9.48133 26.2853L7.59599 28.1706L1.93866 26.2853L5.71066 22.5146Z"
-            fill="black" style="currentColor" />
-        </svg>
+      <button class="note-footer-tools-menu-icon">
+        <img src="@/assets/img/icon-marker.svg" alt="">
       </button>
-      <button class="button-drop-list">
-        <img class="folder-drop-list" src="@/assets/img/icon-more.svg" alt="">
+      <button class="note-footer-tools-menu-icon">
+        <img src="@/assets/img/icon-more.svg" alt="">
       </button>
     </div>
   </div>
@@ -42,24 +31,34 @@
 
 <style scoped>
 .note-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  container-type: inline-size;
   display: flex;
   justify-content: center;
   width: 100%;
   margin-top: auto;
   padding: 0 2rem;
-  padding-bottom: 2rem;
+  margin-bottom: 1rem;
+  /* padding-bottom: 2rem; */
 }
 
 .note-footer-tools-menu {
   display: flex;
   background-color: var(--color-white);
-  height: 5rem;
+  /* height: 5rem; */
   border-radius: 2.5rem;
   width: 100%;
   padding: 1.5rem 2rem;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   /* gap: 0 0.5rem; */
+}
+
+.note-footer-tools-menu-icon img {
+  max-width: 2rem;
+  width: 100%;
 }
 
 button {
@@ -67,5 +66,17 @@ button {
   /* gap: 0rem 2rem; */
   border: none;
   background-color: transparent;
+}
+
+@container (max-width: 400px) {
+  .note-footer-tools-menu {
+    padding: 0.75rem 1rem;
+    gap: 0 0.5rem;
+  }
+
+  .note-footer-tools-menu-icon img {
+    max-width: 1.5rem;
+    width: 100%;
+  }
 }
 </style>

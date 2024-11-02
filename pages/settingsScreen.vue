@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import HeaderName from '@/components/globalComponents/HeaderName.vue';
-import BackButton from '@/components/globalComponents/BackButton.vue';
+import BackButtonComponents from '@/layouts/BackButtonContainer.vue';
 import LoginButton from '@/components/globalComponents/LoginButton.vue';
 import SyncContainer from '@/components/settings/components/SyncContainer.vue';
 import MenuSettings from '@/components/settings/components/MenuSettings.vue';
@@ -12,9 +12,7 @@ definePageMeta({
 
 <template>
  <div class="container settings">
-  <div class="back-button-container">
-   <BackButton to="/" />
-  </div>
+  <BackButtonComponents to="/" />
   <HeaderName />
   <div class="text-content">Authorization</div>
   <LoginButton to="/login" name="Login" />
@@ -30,16 +28,6 @@ definePageMeta({
 </template>
 
 <style scoped>
-.back-button-container {
- display: flex;
- height: 4rem;
- width: 100%;
- align-items: center;
- padding: 0 2rem;
- padding-top: 40px;
- padding-bottom: 20px;
-}
-
 .container {
  display: flex;
  flex-direction: column;

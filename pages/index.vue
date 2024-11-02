@@ -29,12 +29,13 @@ import AddButton from '@/components/noteScreen/components/AddButton.vue';
 
 
 .notes-content {
-  flex-grow: 1;
+  padding-top: 3.5rem;
+  /* flex-grow: 1;
   overflow-y: auto;
-  padding-bottom: 9rem;
+  padding-bottom: 9rem; */
 }
 
-/* .footer {
-  height: 20%;
-} */
+.footer {
+  width: 100%;
+}
 </style>

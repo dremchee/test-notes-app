@@ -2,12 +2,13 @@
 import HeaderNote from '@/components/note/components/HeaderNote.vue';
 import DateCreationNote from '@/components/globalComponents/DateCreationNote.vue';
 import ToolsMenu from '@/components/note/components/ToolsMenu.vue';
+import NoteContentContainer from '@/layouts/NoteContentContainer.vue';
 </script>
 
 <template>
  <div class="note-container">
   <HeaderNote />
-  <div class="note-content-container">
+  <NoteContentContainer>
    <div class="note-date-create-container">
     <DateCreationNote />
    </div>
@@ -21,21 +22,12 @@ import ToolsMenu from '@/components/note/components/ToolsMenu.vue';
     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
     sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
    </div>
-  </div>
+  </NoteContentContainer>
   <ToolsMenu />
  </div>
 </template>
 
 <style scoped>
-.note-content-container {
- display: flex;
- flex-direction: column;
- padding: 0 2rem;
- margin-top: 1.3125rem;
- margin-bottom: 2rem;
- flex-grow: 1;
-}
-
 .note-content {
  margin-top: 1.1875rem;
  font-size: 20px;

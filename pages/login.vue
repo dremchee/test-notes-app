@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import BackButton from '@/components/globalComponents/BackButton.vue';
+import BackButtonContainer from '@/layouts/BackButtonContainer.vue';
 import LoginButton from '@/components/globalComponents/LoginButton.vue';
 import ForDataEntry from '@/components/entranceInAcc/components/ForDataEntry.vue';
 import HeaderName from '@/components/globalComponents/HeaderName.vue';
@@ -11,9 +11,7 @@ definePageMeta({
 
 <template>
  <div class="login-container">
-  <div class="back-button-container">
-   <BackButton to="/settingsScreen" />
-  </div>
+  <BackButtonContainer to="/settingsScreen" />
 
   <HeaderName />
 
@@ -29,16 +27,6 @@ definePageMeta({
 </template>
 
 <style scoped>
-.back-button-container {
- display: flex;
- height: 4rem;
- width: 100%;
- align-items: center;
- padding: 0 2rem;
- padding-top: 40px;
- padding-bottom: 20px;
-}
-
 .login-link-for-create-new-acc-container {
  display: flex;
  justify-content: center;

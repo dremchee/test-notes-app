@@ -42,8 +42,13 @@ const toggleDropDown = () => {
 .add-button-container {
   position: fixed;
   bottom: 0;
+  left: 0;
   width: 100%;
+  /* padding: 0 2rem; */
   z-index: 20;
+  display: flex;
+  padding: 0 2rem;
+  /* justify-content: flex-end; */
 }
 
 .add-button {
@@ -51,7 +56,7 @@ const toggleDropDown = () => {
   width: 100%;
   position: relative;
   justify-content: flex-end;
-  padding: 20px 40px;
+  /* padding: 20px 40px; */
 }
 
 .dropdown-btn {
@@ -82,7 +87,7 @@ const toggleDropDown = () => {
   box-sizing: border-box;
   justify-content: center;
   align-items: center;
-  bottom: 8rem;
+  bottom: 6rem;
   width: 5rem;
   height: 8.6rem;
   background-color: var(--color-white);

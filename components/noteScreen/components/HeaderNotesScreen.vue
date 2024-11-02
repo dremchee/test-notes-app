@@ -22,14 +22,19 @@ import SettingsIcon from '@/assets/img/icon-settings.svg'
 
 <style scoped>
 .header-notes {
+ background-color: var(--color-background);
+ position: fixed;
+ top: 0;
+ left: 0;
  display: inline-flex;
- width: 100%;
+ width: 100vw;
  height: 4rem;
  justify-content: space-between;
  align-items: center;
  padding: 0 2rem;
  padding-top: 40px;
  padding-bottom: 20px;
+ z-index: 100;
 }
 
 .header-notes-title {

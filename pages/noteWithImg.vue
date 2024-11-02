@@ -2,6 +2,7 @@
 import HeaderNote from '@/components/note/components/HeaderNote.vue';
 import DateCreationNote from '@/components/globalComponents/DateCreationNote.vue';
 import ToolsMenu from '@/components/note/components/ToolsMenu.vue';
+import NoteContentContainer from '@/layouts/NoteContentContainer.vue';
 
 import ImgWithCats from '@/assets/img/big-img-with-cats.svg';
 </script>
@@ -9,7 +10,7 @@ import ImgWithCats from '@/assets/img/big-img-with-cats.svg';
 <template>
  <div class="note-container">
   <HeaderNote />
-  <div class="note-content-container">
+  <NoteContentContainer>
    <div class="note-date-create-container">
     <DateCreationNote />
    </div>
@@ -25,27 +26,24 @@ import ImgWithCats from '@/assets/img/big-img-with-cats.svg';
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
     aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
    </div>
-  </div>
+  </NoteContentContainer>
   <ToolsMenu />
  </div>
 </template>
 
 <style scoped>
-.note-content-container {
- display: flex;
- flex-direction: column;
- padding: 0 2rem;
- margin-top: 1.3125rem;
- margin-bottom: 2rem;
- flex-grow: 1;
-}
-
 .note-image-conatiner {
  margin-top: 1.5rem;
  display: flex;
  justify-content: center;
  width: 100%;
  height: auto;
+ /* padding: 0 2rem; */
+}
+
+.note-image-conatiner img {
+ width: 100%;
+ height: 100%;
 }
 
 .note-text {

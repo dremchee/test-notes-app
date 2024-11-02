@@ -34,10 +34,14 @@ import IconTrash from '@/assets/img/icon-trash.svg';
 
 <style scoped>
 .note-header-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--color-background);
   display: flex;
   flex-direction: row;
   padding: 0 2rem;
-  height: 6rem;
+  height: 5rem;
   width: 100%;
   align-items: center;
   justify-content: space-between;

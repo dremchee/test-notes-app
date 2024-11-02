@@ -1,9 +1,4 @@
 <script setup lang="ts">
-// import IconFont from '@/assets/img/icon-font.svg';
-// import IconImage from '@/assets/img/icon-image.svg';
-// import IconMic from '@/assets/img/icon-mic.svg';
-// import IconMarker from '@/assets/img/icon-marker.svg';
-// import IconMore from '@/assets/img/icon-more.svg'; 
 </script>
 
 <template>
@@ -41,19 +36,17 @@
   margin-top: auto;
   padding: 0 2rem;
   margin-bottom: 1rem;
-  /* padding-bottom: 2rem; */
 }
 
 .note-footer-tools-menu {
   display: flex;
   background-color: var(--color-white);
-  /* height: 5rem; */
   border-radius: 2.5rem;
   width: 100%;
   padding: 1.5rem 2rem;
   align-items: center;
   justify-content: space-between;
-  /* gap: 0 0.5rem; */
+  box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.1);
 }
 
 .note-footer-tools-menu-icon img {

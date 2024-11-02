@@ -22,7 +22,7 @@
  height: 4rem;
  line-height: 4rem;
  padding-left: 3.7rem;
- border: none;
+ border: 1px solid var(--color-light-grey-white);
 }
 
 .search-field-notes::placeholder {

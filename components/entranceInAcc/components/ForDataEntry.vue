@@ -40,7 +40,7 @@
 input {
  width: 100%;
  height: 3.5rem;
- border: 1px solid #F1F1F1;
+ border: 1px solid var(--color-light-grey-white);
  border-radius: 12px;
  font-size: 20px;
  font-weight: 500;

@@ -41,5 +41,6 @@ defineProps({
  font-weight: 500;
  border-radius: 12px;
  line-height: 3.5rem;
+ box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.1);
 }
 </style>

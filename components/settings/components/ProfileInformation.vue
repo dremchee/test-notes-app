@@ -20,6 +20,7 @@
 }
 
 .profile-information-content {
+ box-shadow: 0 8px 20px 0px rgba(0, 0, 0, 0.1);
  display: inline-flex;
  align-items: center;
  width: 100%;

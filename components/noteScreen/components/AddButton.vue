@@ -123,7 +123,7 @@ svg path {
 }
 
 .dropdown button:hover {
-  background-color: var(--color-very-light-grey);
+  background-color: var(--color-background);
   border-radius: 50%;
 }
 </style>

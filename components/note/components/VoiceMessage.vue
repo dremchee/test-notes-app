@@ -37,6 +37,7 @@ const clickButton = () => {
   justify-content: space-between;
   gap: 0 1rem;
   padding: 0 1.4rem;
+  box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.1);
 }
 
 .voice-massege-button-container button {
@@ -45,7 +46,7 @@ const clickButton = () => {
   width: 2.8rem;
   height: 2.8rem;
   cursor: pointer;
-  background-color: var(--color-very-light-grey);
+  background-color: var(--color-background);
 }
 
 .voice-massege-button-container.clicked button {

@@ -69,7 +69,6 @@ const props = defineProps({
 }
 
 .card-folder-visual-content.expanded {
- /* align-items: center; */
  justify-content: space-between;
  align-items: center;
 }
@@ -88,7 +87,6 @@ const props = defineProps({
 
 .button-color-selection-folder img {
  max-width: 2rem;
- /* width: 100%; */
 }
 
 .card-folder-text-info {

@@ -15,8 +15,9 @@
   --color-primary: #FF5959;
   --color-light-grey: #DFE2E8;
   --color-white: #FFFFFF;
-  --color-very-light-grey: #F6F6F6;
+  /* --color-very-light-grey: #F6F6F6; */
   --color-almost-very-light-grey: #BABEC7;
+  --color-light-grey-white: #F1F1F1;
 }
 
 * {

@@ -86,7 +86,7 @@ const props = defineProps({
 }
 
 .button-color-selection-folder img {
- max-width: 2rem;
+ max-width: 1.7rem;
 }
 
 .card-folder-text-info {

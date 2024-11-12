@@ -3,10 +3,16 @@ import HeaderNotesScreen from '@/components/notesAndFoldersScreen/components/Hea
 import SearchFieldNotes from '@/components/notesAndFoldersScreen/components/SearchFieldNotes.vue';
 import SelectingNotesOrFolders from '@/components/notesAndFoldersScreen/components/SelectingNotesOrFolders.vue';
 import AddButton from '@/components/notesAndFoldersScreen/components/AddButton.vue';
+// import TiptapEditor from '@/components/TiptapEditor.vue';
 </script>
 
 <template>
   <div class="container">
+    <!-- <div>
+      <client-only>
+        <TiptapEditor />
+      </client-only>
+    </div> -->
     <div class="header">
       <HeaderNotesScreen />
     </div>

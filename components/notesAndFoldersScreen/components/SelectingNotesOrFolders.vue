@@ -55,7 +55,7 @@ const openFolder = () => {
   display: flex;
   gap: 0px 20px;
   width: 100%;
-  padding: 20px 2rem;
+  padding: 0px 2rem 20px;
 }
 
 .selecting {

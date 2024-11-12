@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import FoldersNotesContainer from "@/layouts/FoldersNotesContainer.vue";
-import CardFolder from "@/layouts/CardFolder.vue";
+import FoldersNotesContainer from "@/components/notesAndFoldersScreen/components/FoldersNotesCont.vue";
+import CardFolder from "@/components/notesAndFoldersScreen/components/CardFolder.vue";
 
 import { defineProps } from "vue";
 

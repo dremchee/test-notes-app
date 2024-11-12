@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import BackButtonContainer from '@/layouts/BackButtonContainer.vue';
-import LoginButton from '@/components/globalComponents/LoginButton.vue';
+import BackButtonContainer from '@/components/shared/BackButtonContainer.vue';
+import LoginButton from '@/components/shared/LoginButton.vue';
 import ForDataEntry from '@/components/entranceInAcc/components/ForDataEntry.vue';
-import HeaderName from '@/components/globalComponents/HeaderName.vue';
+import HeaderName from '@/components/shared/HeaderName.vue';
 
 definePageMeta({
  title: 'Login',

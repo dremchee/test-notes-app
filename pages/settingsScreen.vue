@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import HeaderName from '@/components/globalComponents/HeaderName.vue';
-import BackButtonComponents from '@/layouts/BackButtonContainer.vue';
-import LoginButton from '@/components/globalComponents/LoginButton.vue';
+import HeaderName from '@/components/shared/HeaderName.vue';
+import BackButtonComponents from '@/components/shared/BackButtonContainer.vue';
+import LoginButton from '@/components/shared/LoginButton.vue';
 import SyncContainer from '@/components/settings/components/SyncContainer.vue';
 import MenuSettings from '@/components/settings/components/MenuSettings.vue';
 

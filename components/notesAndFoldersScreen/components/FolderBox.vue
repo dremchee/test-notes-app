@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import FoldersNotesContainer from "@/components/notesAndFoldersScreen/components/FoldersNotesCont.vue";
+import FoldersNotesCont from "@/components/notesAndFoldersScreen/components/FoldersNotesCont.vue";
 import CardFolder from "@/components/notesAndFoldersScreen/components/CardFolder.vue";
 
 import { defineProps } from "vue";
@@ -20,11 +20,11 @@ const folders = [
 </script>
 
 <template>
-  <FoldersNotesContainer :expanded="props.expanded">
+  <FoldersNotesCont :expanded="props.expanded">
     <CardFolder v-for="(folder, index) in folders" :expanded="props.expanded" :key="index" :folder="folder"
       :color="folder.color">
     </CardFolder>
-  </FoldersNotesContainer>
+  </FoldersNotesCont>
 </template>
 
 <style scoped></style>

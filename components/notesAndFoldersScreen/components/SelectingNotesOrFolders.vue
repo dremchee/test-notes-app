@@ -1,21 +1,24 @@
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref, computed, defineProps } from 'vue';
+import { storeToRefs } from 'pinia';
+import { useNotesAndFoldersStore } from '../useNotesAndFoldersStore';
+import { useSettingsStore } from '@/components/settings/useSettingsStore';
 import FolderBox from './FolderBox.vue';
 import NotesBox from './NotesBox.vue';
 
-const isExpanded = ref(false);
-const showFolders = ref(true);
 
-const toggleExpand = () => {
-  isExpanded.value = !isExpanded.value;
-}
+const notesAndFoldersStore = useNotesAndFoldersStore();
+const settingsStore = useSettingsStore();
+
+const { activeView } = storeToRefs(notesAndFoldersStore);
+const { layout } = storeToRefs(settingsStore);
 
 const openNotes = () => {
-  showFolders.value = false;
+  notesAndFoldersStore.setView('notes');
 }
 
 const openFolder = () => {
-  showFolders.value = true
+  notesAndFoldersStore.setView('folders');
 }
 
 </script>
@@ -36,17 +39,11 @@ const openFolder = () => {
           fill="#currentColor" />
       </svg>
       Folders</a>
-    <button class="settings-screen-button" @click="toggleExpand">
-      Click
-    </button>
   </div>
 
-  <div v-if="showFolders">
-    <FolderBox :expanded="isExpanded"></FolderBox>
-  </div>
-
-  <div v-else>
-    <NotesBox :expanded="isExpanded"></NotesBox>
+  <div>
+    <FolderBox v-if="activeView === 'folders'" :expanded="layout === 'list'" />
+    <NotesBox v-else :expanded="layout === 'list'" />
   </div>
 </template>
 
@@ -69,7 +66,6 @@ const openFolder = () => {
   border-radius: 40px;
   gap: 0 6px;
   padding: 0 10px;
-  /* margin-right: 20px; */
   color: var(--color-grey);
   font-weight: 500;
 }
@@ -77,11 +73,6 @@ const openFolder = () => {
 .selecting:hover {
   color: var(--color-blue);
 }
-
-/* svg {
-  margin-left: 1rem;
-  margin-right: 10px;
-} */
 
 .selecting svg path {
   fill: var(--color-grey);

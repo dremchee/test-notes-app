@@ -1,4 +1,13 @@
 <script setup lang="ts">
+import { defineProps } from 'vue';
+
+const props = defineProps({
+  layout: {
+    type: String as PropType<'grid' | 'list'>,
+    required: true,
+  },
+});
+
 import HeaderNotesScreen from '@/components/notesAndFoldersScreen/components/HeaderNotesScreen.vue';
 import SearchFieldNotes from '@/components/notesAndFoldersScreen/components/SearchFieldNotes.vue';
 import SelectingNotesOrFolders from '@/components/notesAndFoldersScreen/components/SelectingNotesOrFolders.vue';
@@ -18,7 +27,7 @@ import AddButton from '@/components/notesAndFoldersScreen/components/AddButton.v
     </div>
     <div class="notes-content">
       <SearchFieldNotes />
-      <SelectingNotesOrFolders />
+      <SelectingNotesOrFolders :layout="layout" />
     </div>
     <div class="footer">
       <AddButton />

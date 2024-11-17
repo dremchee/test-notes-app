@@ -1,17 +1,31 @@
 <script setup lang="ts">
-import { ref } from 'vue';
+import { useSettingsStore } from '../useSettingsStore';
+import { ref, defineProps } from 'vue';
+import { storeToRefs } from 'pinia';
+
+import SelectingNotesOrFolders from '@/components/notesAndFoldersScreen/components/SelectingNotesOrFolders.vue';
+
+const props = defineProps({
+  expanded: Boolean,
+});
+
+const settingsStore = useSettingsStore();
 
 const expanded = ref({
   fontSize: false,
   sort: false,
   layout: false,
   theme: false,
-})
+});
+
+const { fontSize } = storeToRefs(settingsStore);
+const { sort } = storeToRefs(settingsStore);
+const { layout } = storeToRefs(settingsStore);
+const { theme } = storeToRefs(settingsStore);
 
 const switchExpanded = (key: keyof typeof expanded.value) => {
   expanded.value[key] = !expanded.value[key];
 }
-
 
 </script>
 
@@ -24,13 +38,13 @@ const switchExpanded = (key: keyof typeof expanded.value) => {
         <div class="settings-list-wrapper">
           <button class="settings-list-button" @click="switchExpanded('fontSize')">
             <span class="settings-list-span-output">
-              Medium
+              {{ fontSize === 'medium' ? 'Medium' : fontSize === 'small' ? 'Small' : 'Large' }}
               <img class="arrow-dropdown" src="@/assets/img/icon-arrow-drop-down.svg" alt="" />
             </span>
             <ul v-show="expanded.fontSize" class="settings-list">
-              <li><span class="selection-button">Small</span></li>
-              <li><span class="selection-button">Medium</span></li>
-              <li><span class="selection-button">Large</span></li>
+              <li><button class="selection-button" @click="settingsStore.setFontSize('small')">Small</button></li>
+              <li><button class="selection-button" @click="settingsStore.setFontSize('medium')">Medium</button></li>
+              <li><button class="selection-button" @click="settingsStore.setFontSize('large')">Large</button></li>
             </ul>
           </button>
         </div>
@@ -43,13 +57,15 @@ const switchExpanded = (key: keyof typeof expanded.value) => {
         <div class="settings-list-wrapper sort-list-wrapper">
           <button class="settings-list-button" @click="switchExpanded('sort')">
             <span class="settings-list-span-output">
-              Date created
+              {{ sort === 'date-created' ? 'Date created' : sort === 'date-chage' ? 'Date change' : 'Title' }}
               <img class="arrow-dropdown" src="@/assets/img/icon-arrow-drop-down.svg" alt="" />
             </span>
             <ul v-show="expanded.sort" class="settings-list">
-              <li><span class="selection-button">Date change</span></li>
-              <li><span class="selection-button">Date created</span></li>
-              <li><span class="selection-button">Title</span></li>
+              <li><button class="selection-button" @click="settingsStore.setSort('date-chage')">Date change</button>
+              </li>
+              <li><button class="selection-button" @click="settingsStore.setSort('date-created')">Date created</button>
+              </li>
+              <li><button class="selection-button" @click="settingsStore.setSort('title')">Title</button></li>
             </ul>
           </button>
         </div>
@@ -63,12 +79,13 @@ const switchExpanded = (key: keyof typeof expanded.value) => {
         <div class="settings-list-wrapper sort-list-wrapper">
           <button class="settings-list-button" @click="switchExpanded('layout')">
             <span class="settings-list-span-output">
-              Grid
+              {{ layout === 'grid' ? 'Grid' : 'List' }}
               <img class="arrow-dropdown" src="@/assets/img/icon-arrow-drop-down.svg" alt="" />
             </span>
             <ul v-show="expanded.layout" class="settings-list">
-              <li><span class="selection-button">List</span></li>
-              <li><span class="selection-button">Grid</span></li>
+              <li><button class="selection-button" @click="settingsStore.setLayout('list')" :expanded=true>List</button>
+              </li>
+              <li><button class="selection-button" @click="settingsStore.setLayout('grid')">Grid</button></li>
             </ul>
           </button>
         </div>
@@ -80,24 +97,22 @@ const switchExpanded = (key: keyof typeof expanded.value) => {
           <div class="settings-list-wrapper">
             <button class="settings-list-button" @click="switchExpanded('theme')">
               <span class="settings-list-span-output">
-                System
+                {{ theme === 'system' ? 'System' : theme === 'light' ? 'Light' : 'Dark' }}
                 <img class="arrow-dropdown" src="@/assets/img/icon-arrow-drop-down.svg" alt="" />
               </span>
               <ul v-show="expanded.theme" class="settings-list">
-                <li><span class="selection-button">Light</span></li>
-                <li><span class="selection-button">System</span></li>
-                <li><span class="selection-button">Dark</span></li>
+                <li><button class="selection-button" @click="settingsStore.setTheme('light')">Light</button></li>
+                <li><button class="selection-button" @click="settingsStore.setTheme('system')">System</button></li>
+                <li><button class="selection-button" @click="settingsStore.setTheme('dark')">Dark</button></li>
               </ul>
             </button>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- <SelectingNotesOrFolders :layout="layout" /> -->
   </div>
-
-
-
-
 </template>
 
 <style scoped>

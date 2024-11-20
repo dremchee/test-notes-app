@@ -24,7 +24,7 @@
  display: inline-flex;
  align-items: center;
  width: 100%;
- background-color: var(--color-white);
+ background-color: var(--color-white-and-grey);
  min-height: 6.25rem;
  border-radius: 24px;
  padding: 1rem 1rem;

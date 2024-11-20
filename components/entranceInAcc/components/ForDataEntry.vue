@@ -46,6 +46,7 @@ input {
  font-weight: 500;
  color: var(--color-grey);
  padding-left: 1rem;
+ background-color: var(--color-white-and-grey);
 }
 
 ::placeholder {

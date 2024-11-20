@@ -60,7 +60,7 @@ const openFolder = () => {
   align-items: center;
   width: 10rem;
   height: 2.5rem;
-  background-color: var(--color-white);
+  background-color: var(--color-white-and-grey);
   cursor: pointer;
   text-decoration: none;
   border-radius: 40px;
@@ -75,7 +75,7 @@ const openFolder = () => {
 }
 
 .selecting svg path {
-  fill: var(--color-grey);
+  fill: var(--color-grey-and-light-gey);
 }
 
 .selecting:hover svg path {

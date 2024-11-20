@@ -17,8 +17,7 @@
 .search-field-notes {
  width: 100%;
  border-radius: 100px;
- background-color: var(--color-white);
- color: var(--color-grey);
+ background-color: var(--color-search);
  height: 4rem;
  line-height: 4rem;
  padding-left: 3.7rem;
@@ -27,6 +26,7 @@
 
 .search-field-notes::placeholder {
  font-size: 20px;
+ color: var(--color-grey);
 }
 
 .search-field-notes.icon {

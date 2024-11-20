@@ -24,14 +24,14 @@ definePageMeta({
   <MenuSettings />
   <div class="logout-container"></div>
  </div>
-
 </template>
 
 <style scoped>
 .container {
  display: flex;
  flex-direction: column;
- height: 100vh;
+ min-height: 100vh;
+ overflow-x: hidden;
 }
 
 .text-content {

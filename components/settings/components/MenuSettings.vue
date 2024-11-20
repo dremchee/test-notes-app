@@ -2,6 +2,7 @@
 import { useSettingsStore } from '../useSettingsStore';
 import { ref, defineProps } from 'vue';
 import { storeToRefs } from 'pinia';
+import { useThemeStore } from '@/components/useThemeStore';
 
 import SelectingNotesOrFolders from '@/components/notesAndFoldersScreen/components/SelectingNotesOrFolders.vue';
 
@@ -10,6 +11,7 @@ const props = defineProps({
 });
 
 const settingsStore = useSettingsStore();
+const themeStore = useThemeStore();
 
 const expanded = ref({
   fontSize: false,
@@ -97,13 +99,13 @@ const switchExpanded = (key: keyof typeof expanded.value) => {
           <div class="settings-list-wrapper">
             <button class="settings-list-button" @click="switchExpanded('theme')">
               <span class="settings-list-span-output">
-                {{ theme === 'system' ? 'System' : theme === 'light' ? 'Light' : 'Dark' }}
+                {{ themeStore.theme === 'system' ? 'System' : themeStore.theme === 'light' ? 'Light' : 'Dark' }}
                 <img class="arrow-dropdown" src="@/assets/img/icon-arrow-drop-down.svg" alt="" />
               </span>
               <ul v-show="expanded.theme" class="settings-list">
-                <li><button class="selection-button" @click="settingsStore.setTheme('light')">Light</button></li>
-                <li><button class="selection-button" @click="settingsStore.setTheme('system')">System</button></li>
-                <li><button class="selection-button" @click="settingsStore.setTheme('dark')">Dark</button></li>
+                <li><button class="selection-button" @click="themeStore.setTheme('light')">Light</button></li>
+                <li><button class="selection-button" @click="themeStore.setTheme('dark')">Dark</button></li>
+                <li><button class="selection-button" @click="themeStore.setTheme('system')">System</button></li>
               </ul>
             </button>
           </div>
@@ -141,13 +143,13 @@ const switchExpanded = (key: keyof typeof expanded.value) => {
 .menu-settings-text {
   font-size: 20px;
   font-weight: 500;
-  color: var(--color-grey);
+  color: var(--color-grey-and-black);
 }
 
 .settings-list-button {
   position: relative;
   border: none;
-  background-color: transparent;
+  background-color: var(--color-background);
   cursor: pointer;
   width: 100%;
   text-align: left;
@@ -164,13 +166,14 @@ const switchExpanded = (key: keyof typeof expanded.value) => {
   font-weight: 500;
   font-size: 20px;
   width: 100%;
+  color: var(--color-grey-and-black);
 }
 
 ul.settings-list {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  background-color: var(--color-white);
+  background-color: var(--color-background);
   position: absolute;
   top: 100%;
   left: 0;
@@ -196,6 +199,7 @@ ul.settings-list li:last-child {
   text-align: left;
   padding: 0.5rem 1rem;
   cursor: pointer;
+  color: var(--color-grey-and-black);
 }
 
 .selection-button:hover {

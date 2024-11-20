@@ -49,11 +49,6 @@ import NoteContentContainer from '@/components/notesAndFoldersScreen/components/
 </template>
 
 <style scoped>
-.note-content {
- margin-top: 1.1875rem;
- font-size: 20px;
-}
-
 .title-note-container {
  display: flex;
  margin-top: 0.6875rem;

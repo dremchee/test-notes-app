@@ -1,8 +1,9 @@
 <script setup lang="ts">
 import { useSettingsStore } from '../useSettingsStore';
-import { ref, defineProps } from 'vue';
+import { ref, defineProps, onMounted } from 'vue';
 import { storeToRefs } from 'pinia';
 import { useThemeStore } from '@/components/useThemeStore';
+import { useFontSizeAppStore } from '@/components/useFontSizeAppStore';
 
 import SelectingNotesOrFolders from '@/components/notesAndFoldersScreen/components/SelectingNotesOrFolders.vue';
 
@@ -12,6 +13,7 @@ const props = defineProps({
 
 const settingsStore = useSettingsStore();
 const themeStore = useThemeStore();
+const fontSizeAppStore = useFontSizeAppStore();
 
 const expanded = ref({
   fontSize: false,
@@ -23,12 +25,20 @@ const expanded = ref({
 const { fontSize } = storeToRefs(settingsStore);
 const { sort } = storeToRefs(settingsStore);
 const { layout } = storeToRefs(settingsStore);
+const { fontSizeContent } = storeToRefs(fontSizeAppStore);
 const { theme } = storeToRefs(settingsStore);
 
 const switchExpanded = (key: keyof typeof expanded.value) => {
   expanded.value[key] = !expanded.value[key];
 }
 
+const updateFontSize = (size: 'small' | 'medium' | 'large') => {
+  fontSizeAppStore.setFontSizeContent(size);
+}
+
+onMounted(() => {
+  fontSizeAppStore.applyFontSizeContent();
+});
 </script>
 
 <template>
@@ -40,13 +50,13 @@ const switchExpanded = (key: keyof typeof expanded.value) => {
         <div class="settings-list-wrapper">
           <button class="settings-list-button" @click="switchExpanded('fontSize')">
             <span class="settings-list-span-output">
-              {{ fontSize === 'medium' ? 'Medium' : fontSize === 'small' ? 'Small' : 'Large' }}
+              {{ fontSizeContent === 'medium' ? 'Medium' : fontSizeContent === 'small' ? 'Small' : 'Large' }}
               <img class="arrow-dropdown" src="@/assets/img/icon-arrow-drop-down.svg" alt="" />
             </span>
             <ul v-show="expanded.fontSize" class="settings-list">
-              <li><button class="selection-button" @click="settingsStore.setFontSize('small')">Small</button></li>
-              <li><button class="selection-button" @click="settingsStore.setFontSize('medium')">Medium</button></li>
-              <li><button class="selection-button" @click="settingsStore.setFontSize('large')">Large</button></li>
+              <li><button class="selection-button" @click="updateFontSize('small')">Small</button></li>
+              <li><button class="selection-button" @click="updateFontSize('medium')">Medium</button></li>
+              <li><button class="selection-button" @click="updateFontSize('large')">Large</button></li>
             </ul>
           </button>
         </div>

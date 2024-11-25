@@ -4,6 +4,7 @@ import { ref, defineProps, onMounted } from 'vue';
 import { storeToRefs } from 'pinia';
 import { useThemeStore } from '@/components/useThemeStore';
 import { useFontSizeAppStore } from '@/components/useFontSizeAppStore';
+import { useSortNotesOrFoldersStore } from '@/components/settings/useSortNotesOrFoldersStore';
 
 import SelectingNotesOrFolders from '@/components/notesAndFoldersScreen/components/SelectingNotesOrFolders.vue';
 
@@ -14,6 +15,7 @@ const props = defineProps({
 const settingsStore = useSettingsStore();
 const themeStore = useThemeStore();
 const fontSizeAppStore = useFontSizeAppStore();
+const sortStore = useSortNotesOrFoldersStore();
 
 const expanded = ref({
   fontSize: false,
@@ -69,15 +71,16 @@ onMounted(() => {
         <div class="settings-list-wrapper sort-list-wrapper">
           <button class="settings-list-button" @click="switchExpanded('sort')">
             <span class="settings-list-span-output">
-              {{ sort === 'date-created' ? 'Date created' : sort === 'date-chage' ? 'Date change' : 'Title' }}
+              {{ sortStore.sortType === 'date-created' ? 'Date created' : sortStore.sortType === 'date-change' ?
+                'Date change' : 'Title' }}
               <img class="arrow-dropdown" src="@/assets/img/icon-arrow-drop-down.svg" alt="" />
             </span>
             <ul v-show="expanded.sort" class="settings-list">
-              <li><button class="selection-button" @click="settingsStore.setSort('date-chage')">Date change</button>
+              <li><button class="selection-button" @click="sortStore.setSortType('date-change')">Date change</button>
               </li>
-              <li><button class="selection-button" @click="settingsStore.setSort('date-created')">Date created</button>
+              <li><button class="selection-button" @click="sortStore.setSortType('date-created')">Date created</button>
               </li>
-              <li><button class="selection-button" @click="settingsStore.setSort('title')">Title</button></li>
+              <li><button class="selection-button" @click="sortStore.setSortType('title')">Title</button></li>
             </ul>
           </button>
         </div>
@@ -137,7 +140,7 @@ onMounted(() => {
 }
 
 .menu-text {
-  font-size: 20px;
+  font-size: var(--font-size-20);
   font-weight: 500;
   color: var(--color-almost-very-light-grey);
 }
@@ -151,7 +154,7 @@ onMounted(() => {
 }
 
 .menu-settings-text {
-  font-size: 20px;
+  font-size: var(--font-size-20);
   font-weight: 500;
   color: var(--color-grey-and-black);
 }
@@ -163,7 +166,7 @@ onMounted(() => {
   cursor: pointer;
   width: 100%;
   text-align: left;
-  font-size: 20px;
+  font-size: var(--font-size-20);
   font-weight: 500;
 }
 
@@ -174,7 +177,7 @@ onMounted(() => {
   align-items: center;
   gap: 0.5rem;
   font-weight: 500;
-  font-size: 20px;
+  font-size: var(--font-size-20);
   width: 100%;
   color: var(--color-grey-and-black);
 }

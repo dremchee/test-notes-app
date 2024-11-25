@@ -25,7 +25,7 @@
 }
 
 .search-field-notes::placeholder {
- font-size: 20px;
+ font-size: var(--font-size-20);
  color: var(--color-grey);
 }
 

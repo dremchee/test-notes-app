@@ -33,7 +33,7 @@ import NoteContentContainer from '@/components/notesAndFoldersScreen/components/
 <style scoped>
 .note-content {
  margin-top: 1.1875rem;
- font-size: 20px;
+ font-size: var(--font-size-20);
  /* margin-bottom: 2rem; */
 }
 
@@ -43,7 +43,7 @@ import NoteContentContainer from '@/components/notesAndFoldersScreen/components/
 }
 
 .title-note {
- font-size: 36px;
+ font-size: var(--font-size-36);
  font-weight: 600;
  color: var(--color-black);
 }

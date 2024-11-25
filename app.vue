@@ -1,7 +1,14 @@
 <script setup>
+import { onMounted } from 'vue';
 import { useThemeStore } from '@/components/useThemeStore';
+import { useFontSizeAppStore } from '@/components/useFontSizeAppStore';
 
 const themeStore = useThemeStore();
+const fontSizeAppStore = useFontSizeAppStore();
+
+onMounted(() => {
+  fontSizeAppStore.applyFontSizeContent();
+});
 </script>
 
 <template>
@@ -26,6 +33,15 @@ const themeStore = useThemeStore();
   --color-light-grey-white: #F1F1F1;
   --color-grey-and-black: rgb(209, 221, 218);
   --color-grey-and-light-gey: #465163;
+
+
+  --font-size-36: 36px;
+  --font-size-24: 24px;
+  --font-size-20: 20px;
+  --font-size-16: 16px;
+  --font-size-14: 14px;
+
+
 }
 
 body[data-theme='light'] {
@@ -95,7 +111,7 @@ body {
 }
 
 .name-folders-and-notes {
-  font-size: 16px;
+  font-size: var(--font-size-16);
   font-weight: 600;
   color: var(--color-grey);
 
@@ -108,13 +124,13 @@ body {
 
 .number-notes-in-folder-and-notes {
   margin-top: 3px;
-  font-size: 14px;
+  font-size: var(--font-size-14);
   color: var(--color-almost-very-light-grey);
 }
 
 .note-content {
   margin-top: 1.1875rem;
-  font-size: 20px;
+  font-size: var(--font-size-20);
   color: var(--color-black);
 }
 </style>

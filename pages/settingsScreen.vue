@@ -36,7 +36,7 @@ definePageMeta({
 
 .text-content {
  font-weight: 500;
- font-size: 20px;
+ font-size: var(--font-size-20);
  color: var(--color-almost-very-light-grey);
  margin-top: 34px;
  padding: 0 2rem;

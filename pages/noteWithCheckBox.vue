@@ -55,7 +55,7 @@ import NoteContentContainer from '@/components/notesAndFoldersScreen/components/
 }
 
 .title-note {
- font-size: 36px;
+ font-size: var(--font-size-36);
  font-weight: 600;
  color: var(--color-black);
 }
@@ -80,7 +80,7 @@ import NoteContentContainer from '@/components/notesAndFoldersScreen/components/
 }
 
 .note-task-text {
- font-size: 20px;
+ font-size: var(--font-size-20);
  color: var(--color-black);
 }
 

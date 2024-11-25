@@ -44,13 +44,13 @@
 }
 
 .profile-information-title {
- font-size: 24px;
+ font-size: var(--font-size-24);
  font-weight: 500;
  color: var(--color-grey);
 }
 
 .update-information {
- font-size: 14px;
+ font-size: var(--font-size-14);
  color: var(--color-almost-very-light-grey);
 }
 </style>

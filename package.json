@@ -17,6 +17,7 @@
     "@tiptap/pm": "^2.9.1",
     "@tiptap/starter-kit": "^2.9.1",
     "@tiptap/vue-3": "^2.9.1",
+    "date-fns": "^4.1.0",
     "njwt": "^2.0.1",
     "nuxt": "^3.13.0",
     "pinia": "^2.2.2",

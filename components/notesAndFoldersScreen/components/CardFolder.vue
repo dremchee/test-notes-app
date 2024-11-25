@@ -1,14 +1,17 @@
 <script setup lang="ts">
-
 import { defineProps } from "vue";
+
 
 const props = defineProps({
  expanded: Boolean,
  folder: {
   type: Object,
   required: true,
-
  },
+ dateChanged: {
+  type: String,
+  required: false,
+ }
 });
 
 </script>
@@ -55,6 +58,9 @@ const props = defineProps({
   <div :class="['card-folder-text-info', { expanded: props.expanded }]">
    <div class="name-folders-and-notes">{{ props.folder.title }}</div>
    <div class="number-notes-in-folder-and-notes">{{ props.folder.quantity }}</div>
+   <div class="number-notes-in-folder-and-notes-hidden">
+    {{ folder.dateChanged || folder.dateCreated }}
+   </div>
   </div>
  </div>
 </template>
@@ -64,8 +70,9 @@ const props = defineProps({
  display: flex;
  flex-direction: row;
  align-items: flex-start;
- gap: 0 1rem;
- height: 4rem;
+ justify-content: space-between;
+ /* gap: 0 1rem; */
+ min-height: 4rem;
 }
 
 .card-folder-visual-content.expanded {
@@ -102,6 +109,9 @@ const props = defineProps({
 .folder-icon svg {
  max-width: 5rem;
  width: 100%;
+ /* min-height: 7rem;
+ max-height: 10rem;
+ padding-bottom: 30px; */
 }
 
 .folder-icon.expanded {
@@ -114,7 +124,7 @@ const props = defineProps({
 }
 
 .name-folders-and-notes {
- font-size: 16px;
+ font-size: var(--font-size-16);
  font-weight: 600;
  color: var(--color-grey);
 
@@ -128,13 +138,17 @@ const props = defineProps({
 
 .number-notes-in-folder-and-notes {
  margin-top: 3px;
- font-size: 14px;
+ font-size: var(--font-size-14);
  color: var(--color-almost-very-light-grey);
+}
+
+.number-notes-in-folder-and-notes-hidden {
+ display: none;
 }
 
 @container (max-width: 120px) {
  .card-folders-and-notes .name-folders-and-notes {
-  font-size: 14px;
+  font-size: var(--font-size-14);
  }
 
  .card-folders-and-notes .number-notes-in-folder-and-notes {

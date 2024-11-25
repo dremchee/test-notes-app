@@ -48,7 +48,7 @@ import ImgWithCats from '@/assets/img/big-img-with-cats.svg';
 
 .note-text {
  margin-top: 1.1875rem;
- font-size: 20px;
+ font-size: var(--font-size-20);
  color: var(--color-black);
  /* margin-bottom: 2rem; */
 }
@@ -59,7 +59,7 @@ import ImgWithCats from '@/assets/img/big-img-with-cats.svg';
 }
 
 .title-note {
- font-size: 36px;
+ font-size: var(--font-size-36);
  font-weight: 600;
  color: var(--color-black);
 }

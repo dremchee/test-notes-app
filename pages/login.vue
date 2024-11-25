@@ -35,7 +35,7 @@ definePageMeta({
 }
 
 .login-link-for-create-new-acc-text {
- font-size: 20px;
+ font-size: var(--font-size-20);
  font-weight: 500;
  color: var(--color-blue);
  text-decoration: none;

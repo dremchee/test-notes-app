@@ -42,7 +42,7 @@ input {
  height: 3.5rem;
  border: 1px solid var(--color-light-grey-white);
  border-radius: 12px;
- font-size: 20px;
+ font-size: var(--font-size-20);
  font-weight: 500;
  color: var(--color-grey);
  padding-left: 1rem;
@@ -50,7 +50,7 @@ input {
 }
 
 ::placeholder {
- font-size: 20px;
+ font-size: var(--font-size-20);
  font-weight: 500;
  color: var(--color-almost-very-light-grey);
 }

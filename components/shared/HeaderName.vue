@@ -12,7 +12,7 @@ const route = useRoute();
 
 <style scoped>
 .header-name-container {
- font-size: 36px;
+ font-size: var(--font-size-36);
  font-weight: 600;
  color: var(--color-black);
  padding: 0 2rem;

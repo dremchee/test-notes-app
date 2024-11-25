@@ -8,13 +8,13 @@ export const useFontSizeAppStore = defineStore('font-size', () => {
   const root = document.documentElement;
   switch(fontSizeContent.value) {
    case 'small':
-    root.style.fontSize = '50%';
+    root.style.fontSize = '75%';
     break;
    case 'medium':
     root.style.fontSize = '100%';
     break;
    case 'large':
-    root.style.fontSize = '400%';
+    root.style.fontSize = '150%';
     break;
   }
  }

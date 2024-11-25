@@ -1,11 +1,16 @@
 <script setup lang="ts">
 import { defineProps } from 'vue';
+import { string } from 'zod';
 
 const props = defineProps({
  expanded: Boolean,
  note: {
   type: Object,
   required: true,
+ },
+ dateChanged: {
+  type: String,
+  required: false,
  }
 });
 </script>
@@ -14,28 +19,28 @@ const props = defineProps({
  <nuxt-link to="/noteWithOnlyText" class="card-folders-and-notes card-folders-and-notes-witout-underscores">
   <div :class="['card-note-visual-content', { expanded: props.expanded }]">
    <div class="name-folders-and-notes name-folders-and-notes-line-restriction">{{ note.title }}</div>
-   <div class="number-notes-in-folder-and-notes">{{ note.date }}</div>
+   <div class="number-notes-in-folder-and-notes">{{ note.dateChanged || note.dateCreated }}</div>
   </div>
  </nuxt-link>
 
  <nuxt-link to="/noteWithCheckbox" class="card-folders-and-notes card-folders-and-notes-witout-underscores">
   <div :class="['card-note-visual-content', { expanded: props.expanded }]">
    <div class="name-folders-and-notes name-folders-and-notes-line-restriction">{{ note.title }}</div>
-   <div class="number-notes-in-folder-and-notes">{{ note.date }}</div>
+   <div class="number-notes-in-folder-and-notes">{{ note.dateChanged || note.dateCreated }}</div>
   </div>
  </nuxt-link>
 
  <nuxt-link to="/noteWithImg" class="card-folders-and-notes card-folders-and-notes-witout-underscores">
   <div :class="['card-note-visual-content', { expanded: props.expanded }]">
    <div class="name-folders-and-notes name-folders-and-notes-line-restriction">{{ note.title }}</div>
-   <div class="number-notes-in-folder-and-notes">{{ note.date }}</div>
+   <div class="number-notes-in-folder-and-notes">{{ note.dateChanged || note.dateCreated }}</div>
   </div>
  </nuxt-link>
 
  <nuxt-link to="/noteWithVoiceMessage" class="card-folders-and-notes card-folders-and-notes-witout-underscores">
   <div :class="['card-note-visual-content', { expanded: props.expanded }]">
    <div class="name-folders-and-notes name-folders-and-notes-line-restriction">{{ note.title }}</div>
-   <div class="number-notes-in-folder-and-notes ">{{ note.date }}</div>
+   <div class="number-notes-in-folder-and-notes ">{{ note.dateChanged || note.dateCreated }}</div>
   </div>
  </nuxt-link>
 </template>

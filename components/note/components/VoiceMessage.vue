@@ -65,7 +65,7 @@ const clickButton = () => {
 }
 
 .voice-massege-time {
-  font-size: 14px;
+  font-size: var(--font-size-14);
   font-weight: 500;
   color: var(--color-almost-very-light-grey);
 }

@@ -11,19 +11,22 @@ const props = defineProps({
  dateChanged: {
   type: String,
   required: false,
- }
+ },
 });
+
+console.log(props.note.to);
+
 </script>
 
 <template>
- <nuxt-link to="/noteWithOnlyText" class="card-folders-and-notes card-folders-and-notes-witout-underscores">
+ <nuxt-link :to="note.to" class="card-folders-and-notes card-folders-and-notes-witout-underscores">
   <div :class="['card-note-visual-content', { expanded: props.expanded }]">
    <div class="name-folders-and-notes name-folders-and-notes-line-restriction">{{ note.title }}</div>
    <div class="number-notes-in-folder-and-notes">{{ note.dateChanged || note.dateCreated }}</div>
   </div>
  </nuxt-link>
 
- <nuxt-link to="/noteWithCheckbox" class="card-folders-and-notes card-folders-and-notes-witout-underscores">
+ <!-- <nuxt-link to="/noteWithCheckbox" class="card-folders-and-notes card-folders-and-notes-witout-underscores">
   <div :class="['card-note-visual-content', { expanded: props.expanded }]">
    <div class="name-folders-and-notes name-folders-and-notes-line-restriction">{{ note.title }}</div>
    <div class="number-notes-in-folder-and-notes">{{ note.dateChanged || note.dateCreated }}</div>
@@ -42,7 +45,7 @@ const props = defineProps({
    <div class="name-folders-and-notes name-folders-and-notes-line-restriction">{{ note.title }}</div>
    <div class="number-notes-in-folder-and-notes ">{{ note.dateChanged || note.dateCreated }}</div>
   </div>
- </nuxt-link>
+ </nuxt-link> -->
 </template>
 
 <style scoped>

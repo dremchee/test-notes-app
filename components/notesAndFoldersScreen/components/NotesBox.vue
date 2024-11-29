@@ -7,15 +7,6 @@ import { defineProps, ref, onMounted } from "vue";
 
 const sortNotesOrFoldersStore = useSortNotesOrFoldersStore();
 
-
-
-// const notes = [
-//  { title: "Lorem ipsum dolor sit amet", date: "September 12, 2024" },
-//  { title: "Lorem ipsum dolor sit amet", date: "September 12, 2024" },
-//  { title: "Message with image Lorem ipsum dolor sit amet ", date: "September 12, 2024" },
-//  { title: "Lorem ipsum dolor sit amet", date: "September 12, 2024" },
-// ];
-
 const props = defineProps({
  expanded: Boolean,
 
@@ -27,7 +18,7 @@ const props = defineProps({
 <template>
  <FoldersNotesContainer :expanded="props.expanded">
   <CardNotes v-for="(note, index) in sortNotesOrFoldersStore.notes" :expanded="props.expanded" :key="index" :note="note"
-   :date="note.dateCreated" :title="note.title" :dateChanged="note.dateChanged">
+   :date="note.dateCreated" :title="note.title" :dateChanged="note.dateChanged" :to="note.to">
   </CardNotes>
  </FoldersNotesContainer>
 </template>

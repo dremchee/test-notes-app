@@ -41,6 +41,8 @@ const updateFontSize = (size: 'small' | 'medium' | 'large') => {
 onMounted(() => {
   fontSizeAppStore.applyFontSizeContent();
 });
+
+
 </script>
 
 <template>
